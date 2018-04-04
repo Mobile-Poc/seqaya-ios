@@ -1,5 +1,5 @@
 //
-//  CheakOutCell.swift
+//  CheckOutCell.swift
 //  seqayaPoc
 //
 //  Created by Mariam Elsayed Ismail on 3/27/18.
@@ -8,9 +8,9 @@
 
 import UIKit
 
-class CheakOutCell: UITableViewCell {
+class CheckOutCell: UITableViewCell {
 
-   weak var vc : CheakOutViewController!
+   weak var vc : CheckOutViewController!
     weak var catVc : CatalogViewController!
     @IBOutlet weak var bottleImg: UIImageView!
     var index : Int!

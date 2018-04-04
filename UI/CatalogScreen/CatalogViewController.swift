@@ -99,9 +99,9 @@ class CatalogViewController: UIViewController , UITableViewDelegate , UITableVie
             present(alert, animated: true, completion: nil)
             
         }else{
-            if segue.identifier == "showCheakOut"
+            if segue.identifier == "showCheckOut"
             {
-                let vc = segue.destination as! CheakOutViewController
+                let vc = segue.destination as! CheckOutViewController
                // vc.orders = orderItems
                 
             }

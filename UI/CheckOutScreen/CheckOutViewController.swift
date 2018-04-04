@@ -8,7 +8,7 @@
 
 import UIKit
 
-class CheakOutViewController: UIViewController {
+class CheckOutViewController: UIViewController {
     
      //var orders = [OrderItem]()
     var orders =  OrderItemsSingelton.instance.orderItems
@@ -120,14 +120,14 @@ class CheakOutViewController: UIViewController {
     }
 
 }
-extension CheakOutViewController:UITableViewDataSource {
+extension CheckOutViewController:UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return orders.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         //return cell
-        let cell = tableView.dequeueReusableCell(withIdentifier: "tableCell") as! CheakOutCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "tableCell") as! CheckOutCell
         cell.vc = self
         cell.index = indexPath.row
         cell.productNameLabel.text = orders[indexPath.item].name
@@ -141,4 +141,4 @@ extension CheakOutViewController:UITableViewDataSource {
     }
 }
 
-extension CheakOutViewController :UITableViewDelegate{}
+extension CheckOutViewController :UITableViewDelegate{}

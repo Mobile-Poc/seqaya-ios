@@ -22,7 +22,7 @@
         <!--عربه التسوق-->
         <scene sceneID="S4B-zI-5Xg">
             <objects>
-                <viewController storyboardIdentifier="CheckOutSB" title="عربه التسوق" id="rAN-Ht-KAk" customClass="CheakOutViewController" customModule="seqayaPoc" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CheckOutSB" title="عربه التسوق" id="rAN-Ht-KAk" customClass="CheckOutViewController" customModule="seqayaPoc" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="k9v-O7-d0L">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -32,7 +32,7 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="separatorColor" red="0.99933081869999996" green="0.66954147819999998" blue="0.2523943186" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="tableCell" id="cFV-QX-zTQ" customClass="CheakOutCell" customModule="seqayaPoc" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="tableCell" id="cFV-QX-zTQ" customClass="CheckOutCell" customModule="seqayaPoc" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="160"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="cFV-QX-zTQ" id="OI2-25-Siz">
@@ -40,7 +40,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="87J-dF-xNR">
-                                                    <rect key="frame" x="262" y="0.0" width="113" height="111.5"/>
+                                                    <rect key="frame" x="262.5" y="0.0" width="112.5" height="111.5"/>
                                                 </imageView>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="n7a-yg-ttN">
                                                     <rect key="frame" x="0.0" y="110.5" width="375" height="1"/>
@@ -74,13 +74,13 @@
                                                     </connections>
                                                 </button>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="مياه طبيعيه  " textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gyq-q7-akf">
-                                                    <rect key="frame" x="155" y="0.0" width="97" height="26"/>
+                                                    <rect key="frame" x="155.5" y="0.0" width="97" height="26"/>
                                                     <fontDescription key="fontDescription" name="OriyaSangamMN-Bold" family="Oriya Sangam MN" pointSize="18"/>
                                                     <color key="textColor" red="0.30980392159999998" green="0.60784313729999995" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="نستله" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yti-yS-3dq">
-                                                    <rect key="frame" x="219" y="36" width="33" height="24"/>
+                                                    <rect key="frame" x="219.5" y="36" width="33" height="24"/>
                                                     <fontDescription key="fontDescription" name="OriyaSangamMN" family="Oriya Sangam MN" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -93,7 +93,7 @@
                                                     </connections>
                                                 </button>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="١.٥ لتر      " textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q5b-st-I2I">
-                                                    <rect key="frame" x="182" y="74.5" width="70" height="21"/>
+                                                    <rect key="frame" x="182.5" y="74.5" width="70" height="21"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="21" id="2gR-ni-2zf"/>
                                                     </constraints>

@@ -38,7 +38,7 @@
                                 </state>
                                 <connections>
                                     <action selector="checkOutButtonAction:" destination="sCY-c6-9Za" eventType="touchUpInside" id="SPt-ji-b7V"/>
-                                    <segue destination="Gi1-R7-F6U" kind="show" identifier="showCheakOut" id="Cjt-G0-omr"/>
+                                    <segue destination="Gi1-R7-F6U" kind="show" identifier="showCheckOut" id="Cjt-G0-omr"/>
                                 </connections>
                             </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="RvF-kb-dcQ">
@@ -145,7 +145,7 @@
         <!--CheckoutNavSB-->
         <scene sceneID="ecS-Qj-CpT">
             <objects>
-                <viewControllerPlaceholder storyboardName="CheakOutStoryboard" referencedIdentifier="CheckoutNavSB" id="9e3-8r-Pcb" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardName="CheckOutStoryboard" referencedIdentifier="CheckoutNavSB" id="9e3-8r-Pcb" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="1NF-Xj-B8Z"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xuB-9l-Aak" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -215,7 +215,7 @@
         <!--CheckOutSB-->
         <scene sceneID="GZu-qM-yTo">
             <objects>
-                <viewControllerPlaceholder storyboardName="CheakOutStoryboard" referencedIdentifier="CheckOutSB" id="Gi1-R7-F6U" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardName="CheckOutStoryboard" referencedIdentifier="CheckOutSB" id="Gi1-R7-F6U" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aWU-7i-FLZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1980" y="1412"/>
