@@ -29,11 +29,14 @@ class OrderSummaryVC: UIViewController ,UITableViewDelegate , UITableViewDataSou
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationController?.navigationBar.backItem?.hidesBackButton = true
-        
         self.navigationItem.setHidesBackButton(true, animated: false)
+       
         tableView.register(UINib.init(nibName: "MyProductCellView" ,bundle : nil) , forCellReuseIdentifier: "productCellSummary")
+       
         self.tableView.delegate = self
         self.tableView.dataSource = self
+        
+        
         
         //        HistoryNetwork().get(id:"1",completion:{(result) in
         //

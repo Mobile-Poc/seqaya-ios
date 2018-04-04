@@ -18,7 +18,13 @@
 		6FED8B402068FCA000BE3D29 /* CheakOutProduct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FED8B3F2068FCA000BE3D29 /* CheakOutProduct.swift */; };
 		6FED8B422068FCBB00BE3D29 /* AlamaofireClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FED8B412068FCBB00BE3D29 /* AlamaofireClient.swift */; };
 		6FED8B442068FCF300BE3D29 /* CatlogCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FED8B432068FCF300BE3D29 /* CatlogCell.swift */; };
-		AC5F9ECE2074EED9003B04BC /* pOrderSummaryPresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5F9ECD2074EED9003B04BC /* pOrderSummaryPresentation.swift */; };
+		AC0179652075164000EFB26C /* OrderSummaryPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0179642075164000EFB26C /* OrderSummaryPresenter.swift */; };
+		AC01796720751D0300EFB26C /* GetPlacedOrderUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC01796620751D0300EFB26C /* GetPlacedOrderUseCase.swift */; };
+		AC01796920751D2D00EFB26C /* GetPlacedOrderUseCaseProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC01796820751D2D00EFB26C /* GetPlacedOrderUseCaseProtocol.swift */; };
+		AC01796C20751E1D00EFB26C /* OrderSummaryRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC01796B20751E1D00EFB26C /* OrderSummaryRepositoryProtocol.swift */; };
+		AC01796E20751E6000EFB26C /* OrderSummaryRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC01796D20751E6000EFB26C /* OrderSummaryRepository.swift */; };
+		AC5F9ECE2074EED9003B04BC /* OrderSummaryPresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5F9ECD2074EED9003B04BC /* OrderSummaryPresenterProtocol.swift */; };
+		AC5F9ED220750FEE003B04BC /* OrderSummaryViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5F9ED120750FEE003B04BC /* OrderSummaryViewProtocol.swift */; };
 		AC79BB0A206EF8FD001D7B7F /* success.json in Resources */ = {isa = PBXBuildFile; fileRef = AC79BB09206EF8FD001D7B7F /* success.json */; };
 		AC79BB0F206F0317001D7B7F /* ValidationHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC79BB0E206F0317001D7B7F /* ValidationHelpers.swift */; };
 		AC79BB16206F2708001D7B7F /* SettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC79BB15206F2708001D7B7F /* SettingsVC.swift */; };
@@ -91,7 +97,13 @@
 		6FED8B3F2068FCA000BE3D29 /* CheakOutProduct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheakOutProduct.swift; sourceTree = "<group>"; };
 		6FED8B412068FCBB00BE3D29 /* AlamaofireClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamaofireClient.swift; sourceTree = "<group>"; };
 		6FED8B432068FCF300BE3D29 /* CatlogCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatlogCell.swift; sourceTree = "<group>"; };
-		AC5F9ECD2074EED9003B04BC /* pOrderSummaryPresentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pOrderSummaryPresentation.swift; sourceTree = "<group>"; };
+		AC0179642075164000EFB26C /* OrderSummaryPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderSummaryPresenter.swift; sourceTree = "<group>"; };
+		AC01796620751D0300EFB26C /* GetPlacedOrderUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetPlacedOrderUseCase.swift; sourceTree = "<group>"; };
+		AC01796820751D2D00EFB26C /* GetPlacedOrderUseCaseProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetPlacedOrderUseCaseProtocol.swift; sourceTree = "<group>"; };
+		AC01796B20751E1D00EFB26C /* OrderSummaryRepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderSummaryRepositoryProtocol.swift; sourceTree = "<group>"; };
+		AC01796D20751E6000EFB26C /* OrderSummaryRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderSummaryRepository.swift; sourceTree = "<group>"; };
+		AC5F9ECD2074EED9003B04BC /* OrderSummaryPresenterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderSummaryPresenterProtocol.swift; sourceTree = "<group>"; };
+		AC5F9ED120750FEE003B04BC /* OrderSummaryViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderSummaryViewProtocol.swift; sourceTree = "<group>"; };
 		AC79BB09206EF8FD001D7B7F /* success.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = success.json; sourceTree = "<group>"; };
 		AC79BB0D206F015C001D7B7F /* Settings.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
 		AC79BB0E206F0317001D7B7F /* ValidationHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidationHelpers.swift; sourceTree = "<group>"; };
@@ -279,10 +291,27 @@
 			path = Shared;
 			sourceTree = "<group>";
 		};
+		AC01796A20751DB900EFB26C /* Business */ = {
+			isa = PBXGroup;
+			children = (
+				AC01796B20751E1D00EFB26C /* OrderSummaryRepositoryProtocol.swift */,
+				AC01796D20751E6000EFB26C /* OrderSummaryRepository.swift */,
+			);
+			path = Business;
+			sourceTree = "<group>";
+		};
+		AC01796F20751ECA00EFB26C /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
 		AC5F9ECA2074EE1F003B04BC /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
-				AC5F9ECD2074EED9003B04BC /* pOrderSummaryPresentation.swift */,
+				AC5F9ECF20750FA9003B04BC /* View */,
+				AC5F9ED020750FB5003B04BC /* Presenter */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -297,8 +326,30 @@
 		AC5F9ECC2074EE37003B04BC /* Domain */ = {
 			isa = PBXGroup;
 			children = (
+				AC01796F20751ECA00EFB26C /* UseCases */,
+				AC01796A20751DB900EFB26C /* Business */,
+				AC01796620751D0300EFB26C /* GetPlacedOrderUseCase.swift */,
+				AC01796820751D2D00EFB26C /* GetPlacedOrderUseCaseProtocol.swift */,
 			);
 			path = Domain;
+			sourceTree = "<group>";
+		};
+		AC5F9ECF20750FA9003B04BC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AC5F9ED120750FEE003B04BC /* OrderSummaryViewProtocol.swift */,
+				ECB5F2D6206BFE5E00C239B7 /* OrderSummaryVC.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		AC5F9ED020750FB5003B04BC /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				AC5F9ECD2074EED9003B04BC /* OrderSummaryPresenterProtocol.swift */,
+				AC0179642075164000EFB26C /* OrderSummaryPresenter.swift */,
+			);
+			path = Presenter;
 			sourceTree = "<group>";
 		};
 		AC79BB12206F237B001D7B7F /* Settings */ = {
@@ -395,7 +446,6 @@
 				AC5F9ECB2074EE2D003B04BC /* Data */,
 				AC79BB09206EF8FD001D7B7F /* success.json */,
 				FB7BD998206D2AE600BE55DD /* MyProductCellView.xib */,
-				ECB5F2D6206BFE5E00C239B7 /* OrderSummaryVC.swift */,
 				ECB5F2E0206C030100C239B7 /* OrderSummary.storyboard */,
 				ECB5F2D8206BFE5F00C239B7 /* ProductSummaryCellVC.swift */,
 				ECB5F2DA206BFE5F00C239B7 /* Productary.xib */,
@@ -606,6 +656,7 @@
 			files = (
 				EC59BB2B206AA4B000D154AB /* SavedLocationNetwork.swift in Sources */,
 				ECB5F2DB206BFE5F00C239B7 /* OrderSummaryVC.swift in Sources */,
+				AC01796720751D0300EFB26C /* GetPlacedOrderUseCase.swift in Sources */,
 				FB7BD997206D1F4600BE55DD /* OrderNetwork.swift in Sources */,
 				FBBD513E206EC702008B55A1 /* UIViewControllerExtension.swift in Sources */,
 				ECB5F2AF206BE53E00C239B7 /* OrderHistory.swift in Sources */,
@@ -613,8 +664,9 @@
 				EC32AA88206BD329001F427B /* RegisterViewController.swift in Sources */,
 				EC32AA87206BCEFC001F427B /* UserModel.swift in Sources */,
 				EC06C5662069286700D6BFEA /* LocationSearchTable.swift in Sources */,
+				AC01796E20751E6000EFB26C /* OrderSummaryRepository.swift in Sources */,
 				AC79BB0F206F0317001D7B7F /* ValidationHelpers.swift in Sources */,
-				AC5F9ECE2074EED9003B04BC /* pOrderSummaryPresentation.swift in Sources */,
+				AC5F9ECE2074EED9003B04BC /* OrderSummaryPresenterProtocol.swift in Sources */,
 				FAFCD6ED206909490074D8E6 /* ApiConstants.swift in Sources */,
 				ECB5F2AB206BE01300C239B7 /* OrderItem.swift in Sources */,
 				ECB5F2CB206BFD3900C239B7 /* HistoryMainCell.swift in Sources */,
@@ -622,13 +674,17 @@
 				EC06C5622069123600D6BFEA /* DeliveryLocationVC.swift in Sources */,
 				FBFABFA1206A5536002F7701 /* ProductCellView.swift in Sources */,
 				AC80C47F20725DCB00C8BAD3 /* ProductCounterDelegate.swift in Sources */,
+				AC01796C20751E1D00EFB26C /* OrderSummaryRepositoryProtocol.swift in Sources */,
 				EC59BB28206A9F6600D154AB /* SavedLocation.swift in Sources */,
 				AC79BB19206F3657001D7B7F /* OrderItemsSingelton.swift in Sources */,
+				AC01796920751D2D00EFB26C /* GetPlacedOrderUseCaseProtocol.swift in Sources */,
 				6FED8B422068FCBB00BE3D29 /* AlamaofireClient.swift in Sources */,
 				FBFABFA6206A55F0002F7701 /* UIHelper.swift in Sources */,
 				ECDCB64D206CC0B7005B173D /* Payment.swift in Sources */,
+				AC5F9ED220750FEE003B04BC /* OrderSummaryViewProtocol.swift in Sources */,
 				EC32AA85206BCBD6001F427B /* LoginController.swift in Sources */,
 				6FED8B3B2068FB7900BE3D29 /* CheckOutViewController.swift in Sources */,
+				AC0179652075164000EFB26C /* OrderSummaryPresenter.swift in Sources */,
 				FBFABFA9206A6D22002F7701 /* ProductNetwork.swift in Sources */,
 				6FED8B272068F75D00BE3D29 /* ViewController.swift in Sources */,
 				FBFABFAC206A717B002F7701 /* CartItem.swift in Sources */,

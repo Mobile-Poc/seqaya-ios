@@ -1,5 +1,5 @@
 //
-//  pOrderSummaryPresentation.swift
+//  pOrderSummaryView.swift
 //  seqayaPoc
 //
 //  Created by Guest on 2018-04-04.
@@ -7,3 +7,6 @@
 //
 
 import Foundation
+protocol OrderSummaryViewProtocol{
+    func showOrderSummary(order:OrderHistoryObj)
+}

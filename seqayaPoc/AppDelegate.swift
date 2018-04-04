@@ -24,7 +24,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let username = def.object(forKey: "email")
         let pass = def.object(forKey: "password")
        
-        if (username != nil && pass != nil)
+        if !(username != nil && pass != nil)
         {
             let storyboard = UIStoryboard(name: "Login", bundle: nil)
             initialViewController = storyboard.instantiateViewController(withIdentifier: "loginVCID")
