@@ -1,0 +1,6 @@
+framework module Pods_seqayaPoc {
+  umbrella header "Pods-seqayaPoc-umbrella.h"
+
+  export *
+  module * { export * }
+}
