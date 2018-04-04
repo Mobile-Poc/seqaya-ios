@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="vXP-FS-89V">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--مكان التوصيل-->
+        <scene sceneID="7Uk-VQ-D1a">
+            <objects>
+                <viewController storyboardIdentifier="DelivaryLocationSB" title="مكان التوصيل" hidesBottomBarWhenPushed="YES" id="vXP-FS-89V" customClass="DeliveryLocationVC" customModule="seqayaPoc" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="YIe-Jn-Dhj">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QCb-rv-RNu">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <connections>
+                                    <outlet property="delegate" destination="vXP-FS-89V" id="2UJ-8M-CLp"/>
+                                </connections>
+                            </mapView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FLB-jO-VzF">
+                                <rect key="frame" x="10" y="30" width="355" height="44.5"/>
+                                <color key="backgroundColor" red="0.85600632429122925" green="0.95320802927017212" blue="0.96201616525650024" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="FLB-jO-VzF" secondAttribute="height" multiplier="360:45" id="TI3-rX-MlV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="اختر من الاماكن المحفوظه">
+                                    <color key="titleColor" red="0.30980392159999998" green="0.60807127540000006" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="SavedLocationButton:" destination="vXP-FS-89V" eventType="touchUpInside" id="ssJ-s2-snN"/>
+                                </connections>
+                            </button>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" alpha="0.69999999999999996" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a7r-Ak-SNa">
+                                <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                                <items>
+                                    <barButtonItem title="موقعك الحالي" id="3gX-v7-bUJ"/>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="AVl-U6-sTO"/>
+                                    <barButtonItem title="التالي" style="plain" id="WwX-m2-0fQ">
+                                        <connections>
+                                            <action selector="NextBut:" destination="vXP-FS-89V" id="fcU-hr-1hP"/>
+                                            <segue destination="Tsp-38-WDA" kind="show" id="0i4-Zn-Rwd"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                                <color key="barTintColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Sip-BC-Wl1" firstAttribute="bottom" secondItem="QCb-rv-RNu" secondAttribute="bottom" id="6rd-Q7-C2D"/>
+                            <constraint firstItem="FLB-jO-VzF" firstAttribute="leading" secondItem="Sip-BC-Wl1" secondAttribute="leading" constant="10" id="DP4-c0-O7b"/>
+                            <constraint firstItem="a7r-Ak-SNa" firstAttribute="leading" secondItem="Sip-BC-Wl1" secondAttribute="leading" id="IA3-NT-R8X"/>
+                            <constraint firstItem="QCb-rv-RNu" firstAttribute="leading" secondItem="Sip-BC-Wl1" secondAttribute="leading" id="aBl-Vr-lJF"/>
+                            <constraint firstItem="Sip-BC-Wl1" firstAttribute="trailing" secondItem="QCb-rv-RNu" secondAttribute="trailing" id="dJG-Aw-zLi"/>
+                            <constraint firstItem="a7r-Ak-SNa" firstAttribute="trailing" secondItem="Sip-BC-Wl1" secondAttribute="trailing" id="en0-oU-gOI"/>
+                            <constraint firstItem="Sip-BC-Wl1" firstAttribute="trailing" secondItem="FLB-jO-VzF" secondAttribute="trailing" constant="10" id="fgu-yc-Sf5"/>
+                            <constraint firstItem="QCb-rv-RNu" firstAttribute="top" secondItem="Sip-BC-Wl1" secondAttribute="top" id="frw-aJ-L2R"/>
+                            <constraint firstItem="FLB-jO-VzF" firstAttribute="top" secondItem="Sip-BC-Wl1" secondAttribute="top" constant="10" id="iOX-MU-Ffu"/>
+                            <constraint firstItem="Sip-BC-Wl1" firstAttribute="bottom" secondItem="a7r-Ak-SNa" secondAttribute="bottom" id="pMK-6X-jEC"/>
+                            <constraint firstItem="Sip-BC-Wl1" firstAttribute="bottom" secondItem="QCb-rv-RNu" secondAttribute="bottom" id="ymf-gb-T4Z"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Sip-BC-Wl1"/>
+                    </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="مكان التوصيل" id="5kW-Gb-u22"/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="locationName" destination="3gX-v7-bUJ" id="v6f-7l-mrj"/>
+                        <outlet property="mapKit" destination="QCb-rv-RNu" id="WfR-ja-BqC"/>
+                        <outlet property="nextButton" destination="WwX-m2-0fQ" id="oEC-bo-fZw"/>
+                        <outlet property="savedButtonUi" destination="FLB-jO-VzF" id="LUG-Ss-ImW"/>
+                        <outlet property="tollbar" destination="a7r-Ak-SNa" id="ssS-45-H5z"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gU1-Jb-UIj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1744.8" y="172.26386806596702"/>
+        </scene>
+        <!--DataTimeSB-->
+        <scene sceneID="lyw-dI-8B3">
+            <objects>
+                <viewControllerPlaceholder storyboardName="DateTimePayement" referencedIdentifier="DataTimeSB" id="Tsp-38-WDA" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NPz-1P-Kb7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2264" y="817"/>
+        </scene>
+        <!--Location Search Table-->
+        <scene sceneID="Xqg-jd-EvN">
+            <objects>
+                <tableViewController storyboardIdentifier="LocationSearchTable" id="tvx-A9-WKH" customClass="LocationSearchTable" customModule="seqayaPoc" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="lZI-w7-T0i">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="MapSearchCell" textLabel="DHI-KG-fTH" detailTextLabel="zTk-kX-f5l" style="IBUITableViewCellStyleSubtitle" id="NvU-mH-rbK">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="NvU-mH-rbK" id="M2j-8K-6Xl">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="DHI-KG-fTH">
+                                            <rect key="frame" x="16" y="5" width="33.5" height="20.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="zTk-kX-f5l">
+                                            <rect key="frame" x="16" y="25.5" width="44" height="14.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="tvx-A9-WKH" id="2Bc-I6-8M8"/>
+                            <outlet property="delegate" destination="tvx-A9-WKH" id="rO0-dj-Vo8"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5ev-83-d3s" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2905" y="176"/>
+        </scene>
+    </scenes>
+</document>
