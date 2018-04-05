@@ -8,10 +8,10 @@
 
 import Foundation
 
-let PRODUCT_URL = "http://mesawer.getsandbox.com/product"
-let ORDER_URL = "http://mesawer.getsandbox.com/order"
-let USER_URL = "http://mesawer.getsandbox.com/user"
-let LOGIN_URL = "http://mesawer.getsandbox.com/login"
-let SAVED_LOCATION = "http://mesawer.getsandbox.com/location"
+let PRODUCT_URL = "http://seqaya.getsandbox.com/product"
+let ORDER_URL = "http://seqaya.getsandbox.com/order"
+let USER_URL = "http://seqaya.getsandbox.com/user"
+let LOGIN_URL = "http://seqaya.getsandbox.com/login"
+let SAVED_LOCATION = "http://seqaya.getsandbox.com/location"
 
 

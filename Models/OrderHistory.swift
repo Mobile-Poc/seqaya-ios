@@ -9,25 +9,117 @@
 
 import Foundation
 
-struct OrderHistory {
-    var id:String!
-    var userId:String!
-    var items:[OrderItem]!
-    var requestDate:String!
-    var deliveryDate:String!
-    var deliveryTime:String!
-    var status:String!
-    var paymentMethod:String!
-    var location:SavedLocation!
-    var total:String!
+class OrderHistory {
+    private var _id:String!
+    var _userId:String!
+    var _items:[OrderItem]!
+    var _requestDate:String!
+    var _deliveryDate:String!
+    var _deliveryTime:String!
+    var _status:String!
+    var _paymentMethod:String!
+    var _location:SavedLocation!
+    var _total:String!
     
-    init() {
-        
+    //Setters and Getters
+    //sad
+    
+    var id:String!{
+        set{
+            self._id = newValue
+        }
+        get{
+            return self._id
+        }
     }
-    //    let shippingTime:String
-    //    let shippingDate:String
-    //    let paymentType:String
-}
+    var userId:String!{
+        set{
+            _userId = newValue
+        }
+        get{
+            return _userId
+        }
+    }
+    var items:[OrderItem]!{
+        set{
+            _items = newValue
+        }
+        get{
+            return _items
+        }
+    }
+    var requestDate:String!{
+        set{
+            _requestDate = newValue
+        }
+        get{
+            return _requestDate
+        }
+    }
+    var deliveryDate:String!{
+        set{
+            _deliveryDate = newValue
+        }
+        get{
+            return _deliveryDate
+        }
+    }
+    var deliveryTime:String!{
+        set{
+            _deliveryTime = newValue
+        }
+        get{
+            return _deliveryTime
+        }
+    }
+    
+    var status:String!{
+        set{
+            _status = newValue
+        }
+        get{
+            return _status
+        }
+    }
+    var paymentMethod:String!{
+        set{
+            _paymentMethod = newValue
+        }
+        get{
+            return _paymentMethod
+        }
+    }
+    var location:SavedLocation!{
+        set{
+            _location = newValue
+        }
+        get{
+            return _location
+        }
+    }
+    var total:String!{
+        set{
+            _total = newValue
+        }
+        get{
+            return _total
+        }
+    }
+    
+    
+    
+     static let _orderHistory = OrderHistory()
+    
+//    static var getInstance:OrderHistory{
+//        return _orderHistory
+//    }
+
+    private init(){
+        print("SINGLETON CREATED")
+        //self._id = "1200"
+
+    }
+        }
 
 struct OrderHistoryObj:Codable {
     
@@ -41,6 +133,7 @@ struct OrderHistoryObj:Codable {
     var location:SavedLocation!
 //    var total:String
     
+   
 }
 
 struct Items:Codable {

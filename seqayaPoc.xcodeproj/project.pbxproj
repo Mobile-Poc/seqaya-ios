@@ -35,6 +35,16 @@
 		AC80C47E20725DCB00C8BAD3 /* CatalogFavButtonDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC80C47B20725DCB00C8BAD3 /* CatalogFavButtonDelegate.swift */; };
 		AC80C47F20725DCB00C8BAD3 /* ProductCounterDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC80C47C20725DCB00C8BAD3 /* ProductCounterDelegate.swift */; };
 		AC80C48020725DCB00C8BAD3 /* ProductFavouriteDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC80C47D20725DCB00C8BAD3 /* ProductFavouriteDelegate.swift */; };
+		AC818D1720761E0500D60D3B /* ServiceLocator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC818D1620761E0500D60D3B /* ServiceLocator.swift */; };
+		AC818D20207660AC00D60D3B /* OrderHistoryMainProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC818D1F207660AC00D60D3B /* OrderHistoryMainProtocol.swift */; };
+		AC818D222076610200D60D3B /* OrderHistoryDetailProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC818D212076610200D60D3B /* OrderHistoryDetailProtocol.swift */; };
+		AC818D252076615800D60D3B /* OrderHistoryMainPresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC818D242076615800D60D3B /* OrderHistoryMainPresenterProtocol.swift */; };
+		AC818D272076620500D60D3B /* OrderHistoryMainPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC818D262076620500D60D3B /* OrderHistoryMainPresenter.swift */; };
+		AC818D2B2076643000D60D3B /* OrderHistoryRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC818D2A2076643000D60D3B /* OrderHistoryRepositoryProtocol.swift */; };
+		AC818D2D2076644200D60D3B /* OrderHistoryRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC818D2C2076644200D60D3B /* OrderHistoryRepository.swift */; };
+		AC818D2F2076656E00D60D3B /* HistoryNetworkProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC818D2E2076656E00D60D3B /* HistoryNetworkProtocol.swift */; };
+		AC818D332076665800D60D3B /* GetOrderHistoryUCProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC818D322076665800D60D3B /* GetOrderHistoryUCProtocol.swift */; };
+		AC818D3720766D4D00D60D3B /* GetOrderHistoryUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC818D3620766D4D00D60D3B /* GetOrderHistoryUseCase.swift */; };
 		EC06C5622069123600D6BFEA /* DeliveryLocationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC06C5612069123600D6BFEA /* DeliveryLocationVC.swift */; };
 		EC06C564206924B000D6BFEA /* DeliveryLocationSB.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC06C563206924B000D6BFEA /* DeliveryLocationSB.storyboard */; };
 		EC06C5662069286700D6BFEA /* LocationSearchTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC06C5652069286700D6BFEA /* LocationSearchTable.swift */; };
@@ -114,6 +124,16 @@
 		AC80C47B20725DCB00C8BAD3 /* CatalogFavButtonDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CatalogFavButtonDelegate.swift; sourceTree = "<group>"; };
 		AC80C47C20725DCB00C8BAD3 /* ProductCounterDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductCounterDelegate.swift; sourceTree = "<group>"; };
 		AC80C47D20725DCB00C8BAD3 /* ProductFavouriteDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductFavouriteDelegate.swift; sourceTree = "<group>"; };
+		AC818D1620761E0500D60D3B /* ServiceLocator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceLocator.swift; sourceTree = "<group>"; };
+		AC818D1F207660AC00D60D3B /* OrderHistoryMainProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderHistoryMainProtocol.swift; sourceTree = "<group>"; };
+		AC818D212076610200D60D3B /* OrderHistoryDetailProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderHistoryDetailProtocol.swift; sourceTree = "<group>"; };
+		AC818D242076615800D60D3B /* OrderHistoryMainPresenterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderHistoryMainPresenterProtocol.swift; sourceTree = "<group>"; };
+		AC818D262076620500D60D3B /* OrderHistoryMainPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderHistoryMainPresenter.swift; sourceTree = "<group>"; };
+		AC818D2A2076643000D60D3B /* OrderHistoryRepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderHistoryRepositoryProtocol.swift; sourceTree = "<group>"; };
+		AC818D2C2076644200D60D3B /* OrderHistoryRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderHistoryRepository.swift; sourceTree = "<group>"; };
+		AC818D2E2076656E00D60D3B /* HistoryNetworkProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryNetworkProtocol.swift; sourceTree = "<group>"; };
+		AC818D322076665800D60D3B /* GetOrderHistoryUCProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetOrderHistoryUCProtocol.swift; sourceTree = "<group>"; };
+		AC818D3620766D4D00D60D3B /* GetOrderHistoryUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetOrderHistoryUseCase.swift; sourceTree = "<group>"; };
 		C71D3DA4DB76C81C5D15DD8C /* Pods-seqayaPoc.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-seqayaPoc.debug.xcconfig"; path = "Pods/Target Support Files/Pods-seqayaPoc/Pods-seqayaPoc.debug.xcconfig"; sourceTree = "<group>"; };
 		D217D9CA20693A6300D1EC6E /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 		E320B87FD8D5661E72543BAD /* Pods_seqayaPoc.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_seqayaPoc.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -192,7 +212,9 @@
 		6FED8B182068F75D00BE3D29 = {
 			isa = PBXGroup;
 			children = (
-				6FED8B382068FAF300BE3D29 /* UI */,
+				AC818D0D20752DDB00D60D3B /* Presentation */,
+				AC818D0E20752DEB00D60D3B /* Domain */,
+				AC818D1220752E3100D60D3B /* Data */,
 				6FED8B372068FAD900BE3D29 /* Network */,
 				6FED8B362068FAC700BE3D29 /* Models */,
 				6FED8B232068F75D00BE3D29 /* seqayaPoc */,
@@ -241,8 +263,6 @@
 			isa = PBXGroup;
 			children = (
 				FB7BD995206D1F2800BE55DD /* OrderNetwork */,
-				ECB5F2D0206BFDC400C239B7 /* HistoryNetwork.swift */,
-				ECB5F2CF206BFDC300C239B7 /* SummaryNetwork.swift */,
 				EC59BB29206AA49400D154AB /* SavedLocationNetwork */,
 				FBFABFA7206A6D07002F7701 /* ProductNetwork */,
 				6FED8B412068FCBB00BE3D29 /* AlamaofireClient.swift */,
@@ -261,8 +281,6 @@
 				FAFCD6E9206904A90074D8E6 /* CatalogScreen */,
 				6FED8B392068FB4000BE3D29 /* CheckOutScreen */,
 				AC79BB12206F237B001D7B7F /* Settings */,
-				ECB5F2D5206BFE3400C239B7 /* OrderSummary */,
-				ECB5F2C6206BFD1900C239B7 /* OrderHistory */,
 				ECB5F2B5206BEDDD00C239B7 /* DateTimeScreen */,
 				EC06C5602069112A00D6BFEA /* DeliveryLocationMap */,
 				6FED8B3E2068FBA700BE3D29 /* Shared */,
@@ -291,52 +309,12 @@
 			path = Shared;
 			sourceTree = "<group>";
 		};
-		AC01796A20751DB900EFB26C /* Business */ = {
-			isa = PBXGroup;
-			children = (
-				AC01796B20751E1D00EFB26C /* OrderSummaryRepositoryProtocol.swift */,
-				AC01796D20751E6000EFB26C /* OrderSummaryRepository.swift */,
-			);
-			path = Business;
-			sourceTree = "<group>";
-		};
-		AC01796F20751ECA00EFB26C /* UseCases */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = UseCases;
-			sourceTree = "<group>";
-		};
-		AC5F9ECA2074EE1F003B04BC /* Presentation */ = {
-			isa = PBXGroup;
-			children = (
-				AC5F9ECF20750FA9003B04BC /* View */,
-				AC5F9ED020750FB5003B04BC /* Presenter */,
-			);
-			path = Presentation;
-			sourceTree = "<group>";
-		};
-		AC5F9ECB2074EE2D003B04BC /* Data */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Data;
-			sourceTree = "<group>";
-		};
-		AC5F9ECC2074EE37003B04BC /* Domain */ = {
-			isa = PBXGroup;
-			children = (
-				AC01796F20751ECA00EFB26C /* UseCases */,
-				AC01796A20751DB900EFB26C /* Business */,
-				AC01796620751D0300EFB26C /* GetPlacedOrderUseCase.swift */,
-				AC01796820751D2D00EFB26C /* GetPlacedOrderUseCaseProtocol.swift */,
-			);
-			path = Domain;
-			sourceTree = "<group>";
-		};
 		AC5F9ECF20750FA9003B04BC /* View */ = {
 			isa = PBXGroup;
 			children = (
+				AC818D1A20765FF000D60D3B /* UI */,
+				AC79BB09206EF8FD001D7B7F /* success.json */,
+				ECB5F2D8206BFE5F00C239B7 /* ProductSummaryCellVC.swift */,
 				AC5F9ED120750FEE003B04BC /* OrderSummaryViewProtocol.swift */,
 				ECB5F2D6206BFE5E00C239B7 /* OrderSummaryVC.swift */,
 			);
@@ -377,6 +355,165 @@
 				AC80C47D20725DCB00C8BAD3 /* ProductFavouriteDelegate.swift */,
 			);
 			path = Delegate;
+			sourceTree = "<group>";
+		};
+		AC818D0D20752DDB00D60D3B /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				6FED8B382068FAF300BE3D29 /* UI */,
+				AC818D1320752E5800D60D3B /* OrderSummary */,
+				AC818D1B2076601E00D60D3B /* GetOrderHistory */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		AC818D0E20752DEB00D60D3B /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				AC818D1020752E1A00D60D3B /* Business */,
+				AC818D1120752E2300D60D3B /* UseCases */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		AC818D1020752E1A00D60D3B /* Business */ = {
+			isa = PBXGroup;
+			children = (
+				AC818D1420752E7800D60D3B /* OrderSummary */,
+				AC818D28207663E200D60D3B /* GetOrderHistory */,
+			);
+			path = Business;
+			sourceTree = "<group>";
+		};
+		AC818D1120752E2300D60D3B /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				AC818D292076640B00D60D3B /* GetOrderHistory */,
+				AC818D1520752E8300D60D3B /* OrderSummary */,
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		AC818D1220752E3100D60D3B /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				AC818D1620761E0500D60D3B /* ServiceLocator.swift */,
+				AC818D31207665A000D60D3B /* SummaryDataLayer */,
+				AC818D302076658D00D60D3B /* HistoryDataLayer */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		AC818D1320752E5800D60D3B /* OrderSummary */ = {
+			isa = PBXGroup;
+			children = (
+				AC5F9ECF20750FA9003B04BC /* View */,
+				AC5F9ED020750FB5003B04BC /* Presenter */,
+			);
+			path = OrderSummary;
+			sourceTree = "<group>";
+		};
+		AC818D1420752E7800D60D3B /* OrderSummary */ = {
+			isa = PBXGroup;
+			children = (
+				AC01796B20751E1D00EFB26C /* OrderSummaryRepositoryProtocol.swift */,
+				AC01796D20751E6000EFB26C /* OrderSummaryRepository.swift */,
+			);
+			path = OrderSummary;
+			sourceTree = "<group>";
+		};
+		AC818D1520752E8300D60D3B /* OrderSummary */ = {
+			isa = PBXGroup;
+			children = (
+				AC01796820751D2D00EFB26C /* GetPlacedOrderUseCaseProtocol.swift */,
+				AC01796620751D0300EFB26C /* GetPlacedOrderUseCase.swift */,
+			);
+			path = OrderSummary;
+			sourceTree = "<group>";
+		};
+		AC818D1A20765FF000D60D3B /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				ECB5F2DA206BFE5F00C239B7 /* Productary.xib */,
+				FB7BD998206D2AE600BE55DD /* MyProductCellView.xib */,
+				ECB5F2E0206C030100C239B7 /* OrderSummary.storyboard */,
+				ECB5F2D9206BFE5F00C239B7 /* ProductSummaryCellVC.xib */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		AC818D1B2076601E00D60D3B /* GetOrderHistory */ = {
+			isa = PBXGroup;
+			children = (
+				AC818D1C2076606C00D60D3B /* View */,
+				AC818D232076614100D60D3B /* Presenter */,
+			);
+			path = GetOrderHistory;
+			sourceTree = "<group>";
+		};
+		AC818D1C2076606C00D60D3B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AC818D1D2076607300D60D3B /* UI */,
+				ECB5F2C7206BFD3800C239B7 /* HistoryMainCell.swift */,
+				AC818D212076610200D60D3B /* OrderHistoryDetailProtocol.swift */,
+				AC818D1F207660AC00D60D3B /* OrderHistoryMainProtocol.swift */,
+				ECB5F2C8206BFD3800C239B7 /* OrderHistoryDetailVC.swift */,
+				ECB5F2C9206BFD3800C239B7 /* OrderHistoryMainVC.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		AC818D1D2076607300D60D3B /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				ECB5F2CA206BFD3800C239B7 /* OrderHistory.storyboard */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		AC818D232076614100D60D3B /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				AC818D242076615800D60D3B /* OrderHistoryMainPresenterProtocol.swift */,
+				AC818D262076620500D60D3B /* OrderHistoryMainPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		AC818D28207663E200D60D3B /* GetOrderHistory */ = {
+			isa = PBXGroup;
+			children = (
+				AC818D2A2076643000D60D3B /* OrderHistoryRepositoryProtocol.swift */,
+				AC818D2C2076644200D60D3B /* OrderHistoryRepository.swift */,
+			);
+			path = GetOrderHistory;
+			sourceTree = "<group>";
+		};
+		AC818D292076640B00D60D3B /* GetOrderHistory */ = {
+			isa = PBXGroup;
+			children = (
+				AC818D322076665800D60D3B /* GetOrderHistoryUCProtocol.swift */,
+				AC818D3620766D4D00D60D3B /* GetOrderHistoryUseCase.swift */,
+			);
+			path = GetOrderHistory;
+			sourceTree = "<group>";
+		};
+		AC818D302076658D00D60D3B /* HistoryDataLayer */ = {
+			isa = PBXGroup;
+			children = (
+				AC818D2E2076656E00D60D3B /* HistoryNetworkProtocol.swift */,
+				ECB5F2D0206BFDC400C239B7 /* HistoryNetwork.swift */,
+			);
+			path = HistoryDataLayer;
+			sourceTree = "<group>";
+		};
+		AC818D31207665A000D60D3B /* SummaryDataLayer */ = {
+			isa = PBXGroup;
+			children = (
+				ECB5F2CF206BFDC300C239B7 /* SummaryNetwork.swift */,
+			);
+			path = SummaryDataLayer;
 			sourceTree = "<group>";
 		};
 		CC00BADE23A0DA56F259FDBF /* Pods */ = {
@@ -425,33 +562,6 @@
 				ECB5F2B9206BEE1E00C239B7 /* PaymentViewController.swift */,
 			);
 			path = DateTimeScreen;
-			sourceTree = "<group>";
-		};
-		ECB5F2C6206BFD1900C239B7 /* OrderHistory */ = {
-			isa = PBXGroup;
-			children = (
-				ECB5F2C7206BFD3800C239B7 /* HistoryMainCell.swift */,
-				ECB5F2CA206BFD3800C239B7 /* OrderHistory.storyboard */,
-				ECB5F2C8206BFD3800C239B7 /* OrderHistoryDetailVC.swift */,
-				ECB5F2C9206BFD3800C239B7 /* OrderHistoryMainVC.swift */,
-			);
-			path = OrderHistory;
-			sourceTree = "<group>";
-		};
-		ECB5F2D5206BFE3400C239B7 /* OrderSummary */ = {
-			isa = PBXGroup;
-			children = (
-				AC5F9ECA2074EE1F003B04BC /* Presentation */,
-				AC5F9ECC2074EE37003B04BC /* Domain */,
-				AC5F9ECB2074EE2D003B04BC /* Data */,
-				AC79BB09206EF8FD001D7B7F /* success.json */,
-				FB7BD998206D2AE600BE55DD /* MyProductCellView.xib */,
-				ECB5F2E0206C030100C239B7 /* OrderSummary.storyboard */,
-				ECB5F2D8206BFE5F00C239B7 /* ProductSummaryCellVC.swift */,
-				ECB5F2DA206BFE5F00C239B7 /* Productary.xib */,
-				ECB5F2D9206BFE5F00C239B7 /* ProductSummaryCellVC.xib */,
-			);
-			path = OrderSummary;
 			sourceTree = "<group>";
 		};
 		FAFCD6E9206904A90074D8E6 /* CatalogScreen */ = {
@@ -654,6 +764,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC818D3720766D4D00D60D3B /* GetOrderHistoryUseCase.swift in Sources */,
 				EC59BB2B206AA4B000D154AB /* SavedLocationNetwork.swift in Sources */,
 				ECB5F2DB206BFE5F00C239B7 /* OrderSummaryVC.swift in Sources */,
 				AC01796720751D0300EFB26C /* GetPlacedOrderUseCase.swift in Sources */,
@@ -665,12 +776,16 @@
 				EC32AA87206BCEFC001F427B /* UserModel.swift in Sources */,
 				EC06C5662069286700D6BFEA /* LocationSearchTable.swift in Sources */,
 				AC01796E20751E6000EFB26C /* OrderSummaryRepository.swift in Sources */,
+				AC818D2B2076643000D60D3B /* OrderHistoryRepositoryProtocol.swift in Sources */,
 				AC79BB0F206F0317001D7B7F /* ValidationHelpers.swift in Sources */,
 				AC5F9ECE2074EED9003B04BC /* OrderSummaryPresenterProtocol.swift in Sources */,
 				FAFCD6ED206909490074D8E6 /* ApiConstants.swift in Sources */,
+				AC818D20207660AC00D60D3B /* OrderHistoryMainProtocol.swift in Sources */,
 				ECB5F2AB206BE01300C239B7 /* OrderItem.swift in Sources */,
 				ECB5F2CB206BFD3900C239B7 /* HistoryMainCell.swift in Sources */,
 				ECB5F2D1206BFDC400C239B7 /* SummaryNetwork.swift in Sources */,
+				AC818D2F2076656E00D60D3B /* HistoryNetworkProtocol.swift in Sources */,
+				AC818D222076610200D60D3B /* OrderHistoryDetailProtocol.swift in Sources */,
 				EC06C5622069123600D6BFEA /* DeliveryLocationVC.swift in Sources */,
 				FBFABFA1206A5536002F7701 /* ProductCellView.swift in Sources */,
 				AC80C47F20725DCB00C8BAD3 /* ProductCounterDelegate.swift in Sources */,
@@ -686,13 +801,17 @@
 				6FED8B3B2068FB7900BE3D29 /* CheckOutViewController.swift in Sources */,
 				AC0179652075164000EFB26C /* OrderSummaryPresenter.swift in Sources */,
 				FBFABFA9206A6D22002F7701 /* ProductNetwork.swift in Sources */,
+				AC818D272076620500D60D3B /* OrderHistoryMainPresenter.swift in Sources */,
 				6FED8B272068F75D00BE3D29 /* ViewController.swift in Sources */,
 				FBFABFAC206A717B002F7701 /* CartItem.swift in Sources */,
+				AC818D2D2076644200D60D3B /* OrderHistoryRepository.swift in Sources */,
 				EC32AA8A206BDEEE001F427B /* CatalogViewController.swift in Sources */,
+				AC818D1720761E0500D60D3B /* ServiceLocator.swift in Sources */,
 				ECB5F2BC206BEE1E00C239B7 /* PaymentTableViewCell.swift in Sources */,
 				6FED8B252068F75D00BE3D29 /* AppDelegate.swift in Sources */,
 				ECB5F2D2206BFDC400C239B7 /* HistoryNetwork.swift in Sources */,
 				EC3B4753206A5B4200F5A8BF /* SavedLocationModel.swift in Sources */,
+				AC818D332076665800D60D3B /* GetOrderHistoryUCProtocol.swift in Sources */,
 				6FED8B402068FCA000BE3D29 /* CheakOutProduct.swift in Sources */,
 				ECB5F2DD206BFE5F00C239B7 /* ProductSummaryCellVC.swift in Sources */,
 				ECB5F2CC206BFD3900C239B7 /* OrderHistoryDetailVC.swift in Sources */,
@@ -707,6 +826,7 @@
 				FBFABFA4206A55C9002F7701 /* Product.swift in Sources */,
 				ECB5F2AD206BE06E00C239B7 /* RKNotificationHub.swift in Sources */,
 				AC79BB16206F2708001D7B7F /* SettingsVC.swift in Sources */,
+				AC818D252076615800D60D3B /* OrderHistoryMainPresenterProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -849,7 +969,7 @@
 				INFOPLIST_FILE = seqayaPoc/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = ntg.seqayaPoc;
+				PRODUCT_BUNDLE_IDENTIFIER = better.seqaya;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -866,7 +986,7 @@
 				INFOPLIST_FILE = seqayaPoc/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = ntg.seqayaPoc;
+				PRODUCT_BUNDLE_IDENTIFIER = better.seqaya;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

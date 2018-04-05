@@ -37,7 +37,7 @@ class SavedLocationNetwork {
     
     func post(newlocation: SavedLocation , compilation: @escaping (Data) -> () , error: @escaping (String) -> ()) {
         let usermail = UserDefaults.standard.object(forKey: "email") as! String ?? ""
-        let url = "http://mesawer.getsandbox.com/location"
+        let url = "http://seqaya.getsandbox.com/location"
         let params : Parameters = ["userId": usermail,"address":newlocation.address,"lat":newlocation.lat,"long":newlocation.long]
 
         alamaofireClient.requestPOSTURL(url: url, param: params, success: { (success) in

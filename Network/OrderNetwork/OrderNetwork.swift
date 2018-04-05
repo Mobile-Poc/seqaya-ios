@@ -13,7 +13,7 @@ class OrderNewtork{
     let alamaofireClient = AlamaofireClient()
     
     func post(order: OrderHistory , compilation: @escaping (Data) -> () , error: @escaping (String) -> ()) {
-        let url = "http://mesawer.getsandbox.com/order"
+        let url = "http://seqaya.getsandbox.com/order"
         //\(Date())
         
         let usermail = UserDefaults.standard.object(forKey: "email") as! String ?? ""

@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="OriyaSangamMN.ttc">
+            <string>OriyaSangamMN</string>
+            <string>OriyaSangamMN-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="productCellView" rowHeight="155" id="KGk-i7-Jjw">
+            <rect key="frame" x="0.0" y="0.0" width="469" height="155"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="469" height="154.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1" translatesAutoresizingMaskIntoConstraints="NO" id="dW8-Y3-B5V">
+                        <rect key="frame" x="0.0" y="10" width="132" height="134.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="dW8-Y3-B5V" secondAttribute="height" multiplier="109:111" id="7du-16-eq2"/>
+                        </constraints>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FEB-oK-5EM">
+                        <rect key="frame" x="132" y="0.0" width="213" height="154.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Aquafina" textAlignment="natural" lineBreakMode="clip" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="azl-it-3QW">
+                                <rect key="frame" x="4" y="25" width="205" height="22.5"/>
+                                <fontDescription key="fontDescription" name="OriyaSangamMN-Bold" family="Oriya Sangam MN" pointSize="16"/>
+                                <color key="textColor" red="0.30980392156862746" green="0.60784313725490191" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Size : 1 Later 25/PKG" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wTx-lX-UG5">
+                                <rect key="frame" x="4" y="67.5" width="205" height="20"/>
+                                <fontDescription key="fontDescription" name="OriyaSangamMN" family="Oriya Sangam MN" pointSize="14"/>
+                                <color key="textColor" red="0.45806347149999999" green="0.45806347149999999" blue="0.45806347149999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="lp2-kj-ipr">
+                                <rect key="frame" x="4" y="104.5" width="90" height="30"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fRm-i1-N4J">
+                                        <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
+                                        <color key="backgroundColor" red="0.85600632429122925" green="0.95320802927017212" blue="0.96201616525650024" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="30" id="E7G-En-wYk"/>
+                                            <constraint firstAttribute="height" constant="30" id="W3A-kk-laA"/>
+                                        </constraints>
+                                        <state key="normal" image="subtract"/>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Zh-Aa-r3b">
+                                        <rect key="frame" x="30" y="0.0" width="30" height="30"/>
+                                        <fontDescription key="fontDescription" name="OriyaSangamMN" family="Oriya Sangam MN" pointSize="16"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sue-ZK-HhT">
+                                        <rect key="frame" x="60" y="0.0" width="30" height="30"/>
+                                        <color key="backgroundColor" red="0.85600632429122925" green="0.95320802927017212" blue="0.96201616525650024" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="30" id="hbY-tQ-h4g"/>
+                                            <constraint firstAttribute="height" constant="30" id="lQQ-Ub-BVW"/>
+                                        </constraints>
+                                        <state key="normal" image="plus"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.92941176469999998" green="0.56470588239999997" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.99989169840000003" green="1" blue="0.99988096950000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="azl-it-3QW" firstAttribute="leading" secondItem="FEB-oK-5EM" secondAttribute="leading" constant="4" id="4Hg-E6-qbX"/>
+                            <constraint firstItem="azl-it-3QW" firstAttribute="top" secondItem="FEB-oK-5EM" secondAttribute="top" constant="25" id="8N7-X0-KBd"/>
+                            <constraint firstItem="wTx-lX-UG5" firstAttribute="width" secondItem="azl-it-3QW" secondAttribute="width" id="Hgx-n6-Vd5"/>
+                            <constraint firstItem="lp2-kj-ipr" firstAttribute="leading" secondItem="wTx-lX-UG5" secondAttribute="leading" id="IaT-xT-iEJ"/>
+                            <constraint firstAttribute="trailing" secondItem="azl-it-3QW" secondAttribute="trailing" constant="4" id="Jne-9X-8jk"/>
+                            <constraint firstAttribute="bottom" secondItem="lp2-kj-ipr" secondAttribute="bottom" constant="20" id="Ntl-AM-lKg"/>
+                            <constraint firstItem="wTx-lX-UG5" firstAttribute="trailing" secondItem="azl-it-3QW" secondAttribute="trailing" id="U6e-Ya-VRy"/>
+                            <constraint firstItem="wTx-lX-UG5" firstAttribute="leading" secondItem="azl-it-3QW" secondAttribute="leading" id="Vau-12-sOG"/>
+                            <constraint firstItem="wTx-lX-UG5" firstAttribute="centerY" secondItem="FEB-oK-5EM" secondAttribute="centerY" id="csi-uy-lHQ"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mpc-vx-cnM">
+                        <rect key="frame" x="345" y="0.0" width="124" height="154.5"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yYv-L0-edj">
+                                <rect key="frame" x="79" y="10" width="25" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="25" id="96y-VP-g95"/>
+                                    <constraint firstAttribute="height" constant="25" id="9ak-SL-F6I"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" image="blueHeart"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$ ٩٨٥" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M2j-7R-YQX">
+                                <rect key="frame" x="32" y="66.5" width="41" height="22.5"/>
+                                <fontDescription key="fontDescription" name="OriyaSangamMN-Bold" family="Oriya Sangam MN" pointSize="16"/>
+                                <color key="textColor" red="0.30980392159999998" green="0.60807127540000006" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WUF-sw-pJe">
+                                <rect key="frame" x="0.0" y="104.5" width="104" height="30"/>
+                                <color key="backgroundColor" red="0.92941176469999998" green="0.56470588239999997" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="CIC-WN-uqE"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="OriyaSangamMN" family="Oriya Sangam MN" pointSize="13"/>
+                                <state key="normal" title="أضف إلى السلة">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="M2j-7R-YQX" firstAttribute="centerY" secondItem="Mpc-vx-cnM" secondAttribute="centerY" id="1kZ-Zl-OU3"/>
+                            <constraint firstAttribute="width" secondItem="Mpc-vx-cnM" secondAttribute="height" multiplier="53:66" id="Gp8-Es-GUz"/>
+                            <constraint firstItem="yYv-L0-edj" firstAttribute="top" secondItem="Mpc-vx-cnM" secondAttribute="top" constant="10" id="KQE-Lt-nvJ"/>
+                            <constraint firstAttribute="bottom" secondItem="WUF-sw-pJe" secondAttribute="bottom" constant="20" id="RfN-Cx-Nms"/>
+                            <constraint firstItem="M2j-7R-YQX" firstAttribute="centerX" secondItem="WUF-sw-pJe" secondAttribute="centerX" id="ZLZ-IT-Gnp"/>
+                            <constraint firstAttribute="trailing" secondItem="WUF-sw-pJe" secondAttribute="trailing" constant="20" id="pSo-Vb-zKH"/>
+                            <constraint firstAttribute="trailing" secondItem="yYv-L0-edj" secondAttribute="trailing" constant="20" id="xt9-30-Y7B"/>
+                            <constraint firstItem="WUF-sw-pJe" firstAttribute="leading" secondItem="Mpc-vx-cnM" secondAttribute="leading" id="yNQ-76-WMa"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Mpc-vx-cnM" firstAttribute="leading" secondItem="FEB-oK-5EM" secondAttribute="trailing" id="9pR-4g-OaN"/>
+                    <constraint firstItem="Mpc-vx-cnM" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="FPU-TM-eSK"/>
+                    <constraint firstItem="FEB-oK-5EM" firstAttribute="leading" secondItem="dW8-Y3-B5V" secondAttribute="trailing" id="MCB-Gn-p4Z"/>
+                    <constraint firstAttribute="bottom" secondItem="FEB-oK-5EM" secondAttribute="bottom" id="OuA-Ra-CeL"/>
+                    <constraint firstAttribute="trailing" secondItem="Mpc-vx-cnM" secondAttribute="trailing" id="aMj-K7-KnW"/>
+                    <constraint firstAttribute="bottom" secondItem="Mpc-vx-cnM" secondAttribute="bottom" id="f1v-1l-F3H"/>
+                    <constraint firstAttribute="bottom" secondItem="dW8-Y3-B5V" secondAttribute="bottom" constant="10" id="j97-g6-fQO"/>
+                    <constraint firstItem="FEB-oK-5EM" firstAttribute="top" secondItem="Mpc-vx-cnM" secondAttribute="top" id="kr3-oh-4o0"/>
+                    <constraint firstItem="dW8-Y3-B5V" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="p9K-vu-rXh"/>
+                    <constraint firstItem="dW8-Y3-B5V" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="tic-bP-dYi"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <inset key="separatorInset" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
+            <point key="canvasLocation" x="-68.5" y="-155.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="1" width="225" height="225"/>
+        <image name="blueHeart" width="30" height="30"/>
+        <image name="plus" width="17" height="17"/>
+        <image name="subtract" width="17" height="17"/>
+    </resources>
+</document>
