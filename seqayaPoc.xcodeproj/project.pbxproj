@@ -16,7 +16,6 @@
 		6FED8B3B2068FB7900BE3D29 /* CheckOutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FED8B3A2068FB7900BE3D29 /* CheckOutViewController.swift */; };
 		6FED8B3D2068FB8C00BE3D29 /* CheckOutStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6FED8B3C2068FB8C00BE3D29 /* CheckOutStoryboard.storyboard */; };
 		6FED8B402068FCA000BE3D29 /* CheakOutProduct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FED8B3F2068FCA000BE3D29 /* CheakOutProduct.swift */; };
-		6FED8B422068FCBB00BE3D29 /* AlamaofireClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FED8B412068FCBB00BE3D29 /* AlamaofireClient.swift */; };
 		6FED8B442068FCF300BE3D29 /* CatlogCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FED8B432068FCF300BE3D29 /* CatlogCell.swift */; };
 		AC0179652075164000EFB26C /* OrderSummaryPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0179642075164000EFB26C /* OrderSummaryPresenter.swift */; };
 		AC01796720751D0300EFB26C /* GetPlacedOrderUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC01796620751D0300EFB26C /* GetPlacedOrderUseCase.swift */; };
@@ -44,9 +43,20 @@
 		EC32AA88206BD329001F427B /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A9AFADD20691EB000191713 /* RegisterViewController.swift */; };
 		EC32AA89206BDB02001F427B /* Register.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A9AFADF2069261E00191713 /* Register.storyboard */; };
 		EC32AA8A206BDEEE001F427B /* CatalogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBFABF9C206A5536002F7701 /* CatalogViewController.swift */; };
+		EC32E2C520761687003937EE /* CreateNewLocationUseCaseProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC32E2C120761685003937EE /* CreateNewLocationUseCaseProtocol.swift */; };
+		EC32E2C620761687003937EE /* CreateNewLocationUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC32E2C220761686003937EE /* CreateNewLocationUseCase.swift */; };
+		EC32E2C720761687003937EE /* GetSavedLocationUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC32E2C320761686003937EE /* GetSavedLocationUseCase.swift */; };
+		EC32E2C820761687003937EE /* GetSavedLocationUseCaseProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC32E2C420761686003937EE /* GetSavedLocationUseCaseProtocol.swift */; };
+		EC32E2CA2076169C003937EE /* SavedLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC32E2C92076169B003937EE /* SavedLocation.swift */; };
+		EC32E2CC207616B0003937EE /* LocationRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC32E2CB207616B0003937EE /* LocationRepositoryProtocol.swift */; };
+		EC32E2D220761782003937EE /* LocationRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC32E2D120761782003937EE /* LocationRepository.swift */; };
+		EC32E2D6207617A7003937EE /* AlamaofireClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC32E2D3207617A6003937EE /* AlamaofireClient.swift */; };
+		EC32E2D7207617A7003937EE /* SavedLocationNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC32E2D4207617A6003937EE /* SavedLocationNetwork.swift */; };
+		EC32E2D8207617A7003937EE /* ApiConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC32E2D5207617A7003937EE /* ApiConstants.swift */; };
+		EC32E2DD20761BC6003937EE /* DelivaryLocationPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC32E2DB20761BC5003937EE /* DelivaryLocationPresenter.swift */; };
+		EC32E2DE20761BC6003937EE /* DelivaryLocationPresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC32E2DC20761BC5003937EE /* DelivaryLocationPresenterProtocol.swift */; };
+		EC32E2E020761C51003937EE /* DelivaryLocationVcProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC32E2DF20761C50003937EE /* DelivaryLocationVcProtocol.swift */; };
 		EC3B4753206A5B4200F5A8BF /* SavedLocationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3B4752206A5B4200F5A8BF /* SavedLocationModel.swift */; };
-		EC59BB28206A9F6600D154AB /* SavedLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC59BB27206A9F6600D154AB /* SavedLocation.swift */; };
-		EC59BB2B206AA4B000D154AB /* SavedLocationNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC59BB2A206AA4B000D154AB /* SavedLocationNetwork.swift */; };
 		ECB5F2AB206BE01300C239B7 /* OrderItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB5F2AA206BE01300C239B7 /* OrderItem.swift */; };
 		ECB5F2AD206BE06E00C239B7 /* RKNotificationHub.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB5F2AC206BE06E00C239B7 /* RKNotificationHub.swift */; };
 		ECB5F2AF206BE53E00C239B7 /* OrderHistory.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB5F2AE206BE53E00C239B7 /* OrderHistory.swift */; };
@@ -67,7 +77,6 @@
 		ECB5F2DF206BFE5F00C239B7 /* Productary.xib in Resources */ = {isa = PBXBuildFile; fileRef = ECB5F2DA206BFE5F00C239B7 /* Productary.xib */; };
 		ECB5F2E1206C030100C239B7 /* OrderSummary.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECB5F2E0206C030100C239B7 /* OrderSummary.storyboard */; };
 		ECDCB64D206CC0B7005B173D /* Payment.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECDCB64C206CC0B7005B173D /* Payment.swift */; };
-		FAFCD6ED206909490074D8E6 /* ApiConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFCD6EC206909490074D8E6 /* ApiConstants.swift */; };
 		FB7BD997206D1F4600BE55DD /* OrderNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7BD996206D1F4600BE55DD /* OrderNetwork.swift */; };
 		FB7BD999206D2AE600BE55DD /* MyProductCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FB7BD998206D2AE600BE55DD /* MyProductCellView.xib */; };
 		FBBD513E206EC702008B55A1 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBBD513D206EC702008B55A1 /* UIViewControllerExtension.swift */; };
@@ -95,7 +104,6 @@
 		6FED8B3A2068FB7900BE3D29 /* CheckOutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckOutViewController.swift; sourceTree = "<group>"; };
 		6FED8B3C2068FB8C00BE3D29 /* CheckOutStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CheckOutStoryboard.storyboard; sourceTree = "<group>"; };
 		6FED8B3F2068FCA000BE3D29 /* CheakOutProduct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheakOutProduct.swift; sourceTree = "<group>"; };
-		6FED8B412068FCBB00BE3D29 /* AlamaofireClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamaofireClient.swift; sourceTree = "<group>"; };
 		6FED8B432068FCF300BE3D29 /* CatlogCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatlogCell.swift; sourceTree = "<group>"; };
 		AC0179642075164000EFB26C /* OrderSummaryPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderSummaryPresenter.swift; sourceTree = "<group>"; };
 		AC01796620751D0300EFB26C /* GetPlacedOrderUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetPlacedOrderUseCase.swift; sourceTree = "<group>"; };
@@ -122,9 +130,20 @@
 		EC06C5652069286700D6BFEA /* LocationSearchTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationSearchTable.swift; sourceTree = "<group>"; };
 		EC06C5672069523F00D6BFEA /* HandleMapSearchProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandleMapSearchProtocol.swift; sourceTree = "<group>"; };
 		EC32AA86206BCEFC001F427B /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		EC32E2C120761685003937EE /* CreateNewLocationUseCaseProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateNewLocationUseCaseProtocol.swift; sourceTree = "<group>"; };
+		EC32E2C220761686003937EE /* CreateNewLocationUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateNewLocationUseCase.swift; sourceTree = "<group>"; };
+		EC32E2C320761686003937EE /* GetSavedLocationUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetSavedLocationUseCase.swift; sourceTree = "<group>"; };
+		EC32E2C420761686003937EE /* GetSavedLocationUseCaseProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetSavedLocationUseCaseProtocol.swift; sourceTree = "<group>"; };
+		EC32E2C92076169B003937EE /* SavedLocation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SavedLocation.swift; sourceTree = "<group>"; };
+		EC32E2CB207616B0003937EE /* LocationRepositoryProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationRepositoryProtocol.swift; sourceTree = "<group>"; };
+		EC32E2D120761782003937EE /* LocationRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationRepository.swift; sourceTree = "<group>"; };
+		EC32E2D3207617A6003937EE /* AlamaofireClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlamaofireClient.swift; sourceTree = "<group>"; };
+		EC32E2D4207617A6003937EE /* SavedLocationNetwork.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SavedLocationNetwork.swift; sourceTree = "<group>"; };
+		EC32E2D5207617A7003937EE /* ApiConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiConstants.swift; sourceTree = "<group>"; };
+		EC32E2DB20761BC5003937EE /* DelivaryLocationPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DelivaryLocationPresenter.swift; sourceTree = "<group>"; };
+		EC32E2DC20761BC5003937EE /* DelivaryLocationPresenterProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DelivaryLocationPresenterProtocol.swift; sourceTree = "<group>"; };
+		EC32E2DF20761C50003937EE /* DelivaryLocationVcProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DelivaryLocationVcProtocol.swift; path = "/Users/admin101/Desktop/NTGSeqaya/seqaya-ios/Presentation/DelivaryLocation/DelivaryLocationVcProtocol.swift"; sourceTree = "<absolute>"; };
 		EC3B4752206A5B4200F5A8BF /* SavedLocationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedLocationModel.swift; sourceTree = "<group>"; };
-		EC59BB27206A9F6600D154AB /* SavedLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedLocation.swift; sourceTree = "<group>"; };
-		EC59BB2A206AA4B000D154AB /* SavedLocationNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedLocationNetwork.swift; sourceTree = "<group>"; };
 		ECB5F2AA206BE01300C239B7 /* OrderItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderItem.swift; sourceTree = "<group>"; };
 		ECB5F2AC206BE06E00C239B7 /* RKNotificationHub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RKNotificationHub.swift; sourceTree = "<group>"; };
 		ECB5F2AE206BE53E00C239B7 /* OrderHistory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderHistory.swift; sourceTree = "<group>"; };
@@ -145,7 +164,6 @@
 		ECB5F2DA206BFE5F00C239B7 /* Productary.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Productary.xib; sourceTree = "<group>"; };
 		ECB5F2E0206C030100C239B7 /* OrderSummary.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = OrderSummary.storyboard; sourceTree = "<group>"; };
 		ECDCB64C206CC0B7005B173D /* Payment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Payment.swift; sourceTree = "<group>"; };
-		FAFCD6EC206909490074D8E6 /* ApiConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiConstants.swift; sourceTree = "<group>"; };
 		FB7BD996206D1F4600BE55DD /* OrderNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderNetwork.swift; sourceTree = "<group>"; };
 		FB7BD998206D2AE600BE55DD /* MyProductCellView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyProductCellView.xib; sourceTree = "<group>"; };
 		FBBD513D206EC702008B55A1 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
@@ -192,6 +210,9 @@
 		6FED8B182068F75D00BE3D29 = {
 			isa = PBXGroup;
 			children = (
+				EC32E2BE2076150C003937EE /* Presentation */,
+				EC32E2BD20761506003937EE /* Domain */,
+				EC32E2BC207614FF003937EE /* Data */,
 				6FED8B382068FAF300BE3D29 /* UI */,
 				6FED8B372068FAD900BE3D29 /* Network */,
 				6FED8B362068FAC700BE3D29 /* Models */,
@@ -245,8 +266,6 @@
 				ECB5F2CF206BFDC300C239B7 /* SummaryNetwork.swift */,
 				EC59BB29206AA49400D154AB /* SavedLocationNetwork */,
 				FBFABFA7206A6D07002F7701 /* ProductNetwork */,
-				6FED8B412068FCBB00BE3D29 /* AlamaofireClient.swift */,
-				FAFCD6EC206909490074D8E6 /* ApiConstants.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -400,18 +419,88 @@
 		EC06C5602069112A00D6BFEA /* DeliveryLocationMap */ = {
 			isa = PBXGroup;
 			children = (
-				EC06C5612069123600D6BFEA /* DeliveryLocationVC.swift */,
+			);
+			path = DeliveryLocationMap;
+			sourceTree = "<group>";
+		};
+		EC32E2BC207614FF003937EE /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				EC32E2D920761B62003937EE /* DelivaryLocation */,
+				EC32E2D3207617A6003937EE /* AlamaofireClient.swift */,
+				EC32E2D5207617A7003937EE /* ApiConstants.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		EC32E2BD20761506003937EE /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				EC32E2CF207616D6003937EE /* Model */,
+				EC32E2D0207616EE003937EE /* RepositoryProtocol */,
+				EC32E2CE207616CB003937EE /* UseCase */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		EC32E2BE2076150C003937EE /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				EC32E2DA20761B7A003937EE /* DelivaryLocation */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		EC32E2CE207616CB003937EE /* UseCase */ = {
+			isa = PBXGroup;
+			children = (
+				ECF78543207D0F90008611D7 /* DelivaryLocation */,
+			);
+			path = UseCase;
+			sourceTree = "<group>";
+		};
+		EC32E2CF207616D6003937EE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EC32E2C92076169B003937EE /* SavedLocation.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EC32E2D0207616EE003937EE /* RepositoryProtocol */ = {
+			isa = PBXGroup;
+			children = (
+				ECF78544207D0FBF008611D7 /* DelivaryLocation */,
+			);
+			path = RepositoryProtocol;
+			sourceTree = "<group>";
+		};
+		EC32E2D920761B62003937EE /* DelivaryLocation */ = {
+			isa = PBXGroup;
+			children = (
+				ECF78546207D0FE8008611D7 /* Repository */,
+				ECF78545207D0FDE008611D7 /* DataSource */,
+			);
+			path = DelivaryLocation;
+			sourceTree = "<group>";
+		};
+		EC32E2DA20761B7A003937EE /* DelivaryLocation */ = {
+			isa = PBXGroup;
+			children = (
 				EC06C563206924B000D6BFEA /* DeliveryLocationSB.storyboard */,
+				EC32E2DB20761BC5003937EE /* DelivaryLocationPresenter.swift */,
+				EC32E2DC20761BC5003937EE /* DelivaryLocationPresenterProtocol.swift */,
+				EC06C5612069123600D6BFEA /* DeliveryLocationVC.swift */,
+				EC32E2DF20761C50003937EE /* DelivaryLocationVcProtocol.swift */,
 				EC06C5652069286700D6BFEA /* LocationSearchTable.swift */,
 				EC06C5672069523F00D6BFEA /* HandleMapSearchProtocol.swift */,
 			);
-			path = DeliveryLocationMap;
+			path = DelivaryLocation;
 			sourceTree = "<group>";
 		};
 		EC59BB29206AA49400D154AB /* SavedLocationNetwork */ = {
 			isa = PBXGroup;
 			children = (
-				EC59BB2A206AA4B000D154AB /* SavedLocationNetwork.swift */,
 			);
 			path = SavedLocationNetwork;
 			sourceTree = "<group>";
@@ -452,6 +541,41 @@
 				ECB5F2D9206BFE5F00C239B7 /* ProductSummaryCellVC.xib */,
 			);
 			path = OrderSummary;
+			sourceTree = "<group>";
+		};
+		ECF78543207D0F90008611D7 /* DelivaryLocation */ = {
+			isa = PBXGroup;
+			children = (
+				EC32E2C220761686003937EE /* CreateNewLocationUseCase.swift */,
+				EC32E2C120761685003937EE /* CreateNewLocationUseCaseProtocol.swift */,
+				EC32E2C320761686003937EE /* GetSavedLocationUseCase.swift */,
+				EC32E2C420761686003937EE /* GetSavedLocationUseCaseProtocol.swift */,
+			);
+			path = DelivaryLocation;
+			sourceTree = "<group>";
+		};
+		ECF78544207D0FBF008611D7 /* DelivaryLocation */ = {
+			isa = PBXGroup;
+			children = (
+				EC32E2CB207616B0003937EE /* LocationRepositoryProtocol.swift */,
+			);
+			path = DelivaryLocation;
+			sourceTree = "<group>";
+		};
+		ECF78545207D0FDE008611D7 /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				EC32E2D4207617A6003937EE /* SavedLocationNetwork.swift */,
+			);
+			path = DataSource;
+			sourceTree = "<group>";
+		};
+		ECF78546207D0FE8008611D7 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				EC32E2D120761782003937EE /* LocationRepository.swift */,
+			);
+			path = Repository;
 			sourceTree = "<group>";
 		};
 		FAFCD6E9206904A90074D8E6 /* CatalogScreen */ = {
@@ -496,7 +620,6 @@
 			isa = PBXGroup;
 			children = (
 				FBFABFAB206A717B002F7701 /* CartItem.swift */,
-				EC59BB27206A9F6600D154AB /* SavedLocation.swift */,
 				EC32AA86206BCEFC001F427B /* UserModel.swift */,
 			);
 			path = Codable;
@@ -654,12 +777,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EC59BB2B206AA4B000D154AB /* SavedLocationNetwork.swift in Sources */,
 				ECB5F2DB206BFE5F00C239B7 /* OrderSummaryVC.swift in Sources */,
 				AC01796720751D0300EFB26C /* GetPlacedOrderUseCase.swift in Sources */,
 				FB7BD997206D1F4600BE55DD /* OrderNetwork.swift in Sources */,
 				FBBD513E206EC702008B55A1 /* UIViewControllerExtension.swift in Sources */,
 				ECB5F2AF206BE53E00C239B7 /* OrderHistory.swift in Sources */,
+				EC32E2D220761782003937EE /* LocationRepository.swift in Sources */,
+				EC32E2D7207617A7003937EE /* SavedLocationNetwork.swift in Sources */,
 				AC80C48020725DCB00C8BAD3 /* ProductFavouriteDelegate.swift in Sources */,
 				EC32AA88206BD329001F427B /* RegisterViewController.swift in Sources */,
 				EC32AA87206BCEFC001F427B /* UserModel.swift in Sources */,
@@ -667,7 +791,6 @@
 				AC01796E20751E6000EFB26C /* OrderSummaryRepository.swift in Sources */,
 				AC79BB0F206F0317001D7B7F /* ValidationHelpers.swift in Sources */,
 				AC5F9ECE2074EED9003B04BC /* OrderSummaryPresenterProtocol.swift in Sources */,
-				FAFCD6ED206909490074D8E6 /* ApiConstants.swift in Sources */,
 				ECB5F2AB206BE01300C239B7 /* OrderItem.swift in Sources */,
 				ECB5F2CB206BFD3900C239B7 /* HistoryMainCell.swift in Sources */,
 				ECB5F2D1206BFDC400C239B7 /* SummaryNetwork.swift in Sources */,
@@ -675,16 +798,18 @@
 				FBFABFA1206A5536002F7701 /* ProductCellView.swift in Sources */,
 				AC80C47F20725DCB00C8BAD3 /* ProductCounterDelegate.swift in Sources */,
 				AC01796C20751E1D00EFB26C /* OrderSummaryRepositoryProtocol.swift in Sources */,
-				EC59BB28206A9F6600D154AB /* SavedLocation.swift in Sources */,
 				AC79BB19206F3657001D7B7F /* OrderItemsSingelton.swift in Sources */,
 				AC01796920751D2D00EFB26C /* GetPlacedOrderUseCaseProtocol.swift in Sources */,
-				6FED8B422068FCBB00BE3D29 /* AlamaofireClient.swift in Sources */,
+				EC32E2DD20761BC6003937EE /* DelivaryLocationPresenter.swift in Sources */,
+				EC32E2CC207616B0003937EE /* LocationRepositoryProtocol.swift in Sources */,
 				FBFABFA6206A55F0002F7701 /* UIHelper.swift in Sources */,
 				ECDCB64D206CC0B7005B173D /* Payment.swift in Sources */,
 				AC5F9ED220750FEE003B04BC /* OrderSummaryViewProtocol.swift in Sources */,
 				EC32AA85206BCBD6001F427B /* LoginController.swift in Sources */,
 				6FED8B3B2068FB7900BE3D29 /* CheckOutViewController.swift in Sources */,
+				EC32E2CA2076169C003937EE /* SavedLocation.swift in Sources */,
 				AC0179652075164000EFB26C /* OrderSummaryPresenter.swift in Sources */,
+				EC32E2E020761C51003937EE /* DelivaryLocationVcProtocol.swift in Sources */,
 				FBFABFA9206A6D22002F7701 /* ProductNetwork.swift in Sources */,
 				6FED8B272068F75D00BE3D29 /* ViewController.swift in Sources */,
 				FBFABFAC206A717B002F7701 /* CartItem.swift in Sources */,
@@ -696,17 +821,24 @@
 				6FED8B402068FCA000BE3D29 /* CheakOutProduct.swift in Sources */,
 				ECB5F2DD206BFE5F00C239B7 /* ProductSummaryCellVC.swift in Sources */,
 				ECB5F2CC206BFD3900C239B7 /* OrderHistoryDetailVC.swift in Sources */,
+				EC32E2C620761687003937EE /* CreateNewLocationUseCase.swift in Sources */,
+				EC32E2D6207617A7003937EE /* AlamaofireClient.swift in Sources */,
 				AC80C47920725D2500C8BAD3 /* FavProductViewController.swift in Sources */,
 				ECB5F2BD206BEE1E00C239B7 /* PaymentViewController.swift in Sources */,
+				EC32E2C720761687003937EE /* GetSavedLocationUseCase.swift in Sources */,
 				EC06C5682069523F00D6BFEA /* HandleMapSearchProtocol.swift in Sources */,
+				EC32E2DE20761BC6003937EE /* DelivaryLocationPresenterProtocol.swift in Sources */,
 				ECB5F2B1206BE67A00C239B7 /* CheckOutCell.swift in Sources */,
 				ECB5F2BB206BEE1E00C239B7 /* DateTimeViewController.swift in Sources */,
 				6FED8B442068FCF300BE3D29 /* CatlogCell.swift in Sources */,
+				EC32E2D8207617A7003937EE /* ApiConstants.swift in Sources */,
+				EC32E2C820761687003937EE /* GetSavedLocationUseCaseProtocol.swift in Sources */,
 				AC80C47E20725DCB00C8BAD3 /* CatalogFavButtonDelegate.swift in Sources */,
 				ECB5F2CD206BFD3900C239B7 /* OrderHistoryMainVC.swift in Sources */,
 				FBFABFA4206A55C9002F7701 /* Product.swift in Sources */,
 				ECB5F2AD206BE06E00C239B7 /* RKNotificationHub.swift in Sources */,
 				AC79BB16206F2708001D7B7F /* SettingsVC.swift in Sources */,
+				EC32E2C520761687003937EE /* CreateNewLocationUseCaseProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -845,7 +977,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = NLLVM8V6FP;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = seqayaPoc/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -862,7 +994,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = NLLVM8V6FP;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = seqayaPoc/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
