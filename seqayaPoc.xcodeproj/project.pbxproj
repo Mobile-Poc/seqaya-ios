@@ -212,6 +212,7 @@
 		6FED8B182068F75D00BE3D29 = {
 			isa = PBXGroup;
 			children = (
+				6FED8B382068FAF300BE3D29 /* UI */,
 				AC818D0D20752DDB00D60D3B /* Presentation */,
 				AC818D0E20752DEB00D60D3B /* Domain */,
 				AC818D1220752E3100D60D3B /* Data */,
@@ -360,7 +361,6 @@
 		AC818D0D20752DDB00D60D3B /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
-				6FED8B382068FAF300BE3D29 /* UI */,
 				AC818D1320752E5800D60D3B /* OrderSummary */,
 				AC818D1B2076601E00D60D3B /* GetOrderHistory */,
 			);
