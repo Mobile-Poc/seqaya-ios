@@ -53,7 +53,6 @@
 		EC32AA88206BD329001F427B /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A9AFADD20691EB000191713 /* RegisterViewController.swift */; };
 		EC32AA89206BDB02001F427B /* Register.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A9AFADF2069261E00191713 /* Register.storyboard */; };
 		EC32AA8A206BDEEE001F427B /* CatalogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBFABF9C206A5536002F7701 /* CatalogViewController.swift */; };
-		EC32E2C520761687003937EE /* CreateNewLocationUseCaseProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC32E2C120761685003937EE /* CreateNewLocationUseCaseProtocol.swift */; };
 		EC32E2C620761687003937EE /* CreateNewLocationUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC32E2C220761686003937EE /* CreateNewLocationUseCase.swift */; };
 		EC32E2C720761687003937EE /* GetSavedLocationUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC32E2C320761686003937EE /* GetSavedLocationUseCase.swift */; };
 		EC32E2C820761687003937EE /* GetSavedLocationUseCaseProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC32E2C420761686003937EE /* GetSavedLocationUseCaseProtocol.swift */; };
@@ -150,7 +149,6 @@
 		EC06C5652069286700D6BFEA /* LocationSearchTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationSearchTable.swift; sourceTree = "<group>"; };
 		EC06C5672069523F00D6BFEA /* HandleMapSearchProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandleMapSearchProtocol.swift; sourceTree = "<group>"; };
 		EC32AA86206BCEFC001F427B /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
-		EC32E2C120761685003937EE /* CreateNewLocationUseCaseProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateNewLocationUseCaseProtocol.swift; sourceTree = "<group>"; };
 		EC32E2C220761686003937EE /* CreateNewLocationUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateNewLocationUseCase.swift; sourceTree = "<group>"; };
 		EC32E2C320761686003937EE /* GetSavedLocationUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetSavedLocationUseCase.swift; sourceTree = "<group>"; };
 		EC32E2C420761686003937EE /* GetSavedLocationUseCaseProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetSavedLocationUseCaseProtocol.swift; sourceTree = "<group>"; };
@@ -230,7 +228,6 @@
 		6FED8B182068F75D00BE3D29 = {
 			isa = PBXGroup;
 			children = (
-				EC32E2BE2076150C003937EE /* Presentation */,
 				EC32E2BD20761506003937EE /* Domain */,
 				EC32E2BC207614FF003937EE /* Data */,
 				6FED8B382068FAF300BE3D29 /* UI */,
@@ -243,6 +240,7 @@
 				6FED8B222068F75D00BE3D29 /* Products */,
 				CC00BADE23A0DA56F259FDBF /* Pods */,
 				3E59774C1EB009532A5B3855 /* Frameworks */,
+				AC818D53207D13B200D60D3B /* Recovered References */,
 			);
 			sourceTree = "<group>";
 		};
@@ -380,6 +378,7 @@
 		AC818D0D20752DDB00D60D3B /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				EC32E2DA20761B7A003937EE /* DelivaryLocation */,
 				AC818D1320752E5800D60D3B /* OrderSummary */,
 				AC818D1B2076601E00D60D3B /* GetOrderHistory */,
 			);
@@ -416,6 +415,7 @@
 		AC818D1220752E3100D60D3B /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				EC32E2D920761B62003937EE /* DelivaryLocation */,
 				AC818D1620761E0500D60D3B /* ServiceLocator.swift */,
 				AC818D31207665A000D60D3B /* SummaryDataLayer */,
 				AC818D302076658D00D60D3B /* HistoryDataLayer */,
@@ -535,6 +535,19 @@
 			path = SummaryDataLayer;
 			sourceTree = "<group>";
 		};
+		AC818D53207D13B200D60D3B /* Recovered References */ = {
+			isa = PBXGroup;
+			children = (
+				EC32E2D120761782003937EE /* LocationRepository.swift */,
+				EC32E2D4207617A6003937EE /* SavedLocationNetwork.swift */,
+				EC32E2CB207616B0003937EE /* LocationRepositoryProtocol.swift */,
+				EC32E2C220761686003937EE /* CreateNewLocationUseCase.swift */,
+				EC32E2C320761686003937EE /* GetSavedLocationUseCase.swift */,
+				EC32E2C420761686003937EE /* GetSavedLocationUseCaseProtocol.swift */,
+			);
+			name = "Recovered References";
+			sourceTree = "<group>";
+		};
 		CC00BADE23A0DA56F259FDBF /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -563,7 +576,6 @@
 		EC32E2BC207614FF003937EE /* Data */ = {
 			isa = PBXGroup;
 			children = (
-				EC32E2D920761B62003937EE /* DelivaryLocation */,
 				EC32E2D3207617A6003937EE /* AlamaofireClient.swift */,
 				EC32E2D5207617A7003937EE /* ApiConstants.swift */,
 			);
@@ -580,18 +592,9 @@
 			path = Domain;
 			sourceTree = "<group>";
 		};
-		EC32E2BE2076150C003937EE /* Presentation */ = {
-			isa = PBXGroup;
-			children = (
-				EC32E2DA20761B7A003937EE /* DelivaryLocation */,
-			);
-			path = Presentation;
-			sourceTree = "<group>";
-		};
 		EC32E2CE207616CB003937EE /* UseCase */ = {
 			isa = PBXGroup;
 			children = (
-				ECF78543207D0F90008611D7 /* DelivaryLocation */,
 			);
 			path = UseCase;
 			sourceTree = "<group>";
@@ -607,7 +610,6 @@
 		EC32E2D0207616EE003937EE /* RepositoryProtocol */ = {
 			isa = PBXGroup;
 			children = (
-				ECF78544207D0FBF008611D7 /* DelivaryLocation */,
 			);
 			path = RepositoryProtocol;
 			sourceTree = "<group>";
@@ -615,8 +617,6 @@
 		EC32E2D920761B62003937EE /* DelivaryLocation */ = {
 			isa = PBXGroup;
 			children = (
-				ECF78546207D0FE8008611D7 /* Repository */,
-				ECF78545207D0FDE008611D7 /* DataSource */,
 			);
 			path = DelivaryLocation;
 			sourceTree = "<group>";
@@ -853,7 +853,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				AC818D3720766D4D00D60D3B /* GetOrderHistoryUseCase.swift in Sources */,
-				EC59BB2B206AA4B000D154AB /* SavedLocationNetwork.swift in Sources */,
 				ECB5F2DB206BFE5F00C239B7 /* OrderSummaryVC.swift in Sources */,
 				AC01796720751D0300EFB26C /* GetPlacedOrderUseCase.swift in Sources */,
 				FB7BD997206D1F4600BE55DD /* OrderNetwork.swift in Sources */,
@@ -869,7 +868,6 @@
 				AC818D2B2076643000D60D3B /* OrderHistoryRepositoryProtocol.swift in Sources */,
 				AC79BB0F206F0317001D7B7F /* ValidationHelpers.swift in Sources */,
 				AC5F9ECE2074EED9003B04BC /* OrderSummaryPresenterProtocol.swift in Sources */,
-				FAFCD6ED206909490074D8E6 /* ApiConstants.swift in Sources */,
 				AC818D20207660AC00D60D3B /* OrderHistoryMainProtocol.swift in Sources */,
 				ECB5F2AB206BE01300C239B7 /* OrderItem.swift in Sources */,
 				ECB5F2CB206BFD3900C239B7 /* HistoryMainCell.swift in Sources */,
