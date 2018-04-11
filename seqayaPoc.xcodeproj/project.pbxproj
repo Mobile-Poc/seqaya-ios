@@ -119,7 +119,7 @@
 		AC01796620751D0300EFB26C /* GetPlacedOrderUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetPlacedOrderUseCase.swift; sourceTree = "<group>"; };
 		AC01796820751D2D00EFB26C /* GetPlacedOrderUseCaseProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetPlacedOrderUseCaseProtocol.swift; sourceTree = "<group>"; };
 		AC01796B20751E1D00EFB26C /* OrderSummaryRepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderSummaryRepositoryProtocol.swift; sourceTree = "<group>"; };
-		AC01796D20751E6000EFB26C /* OrderSummaryRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderSummaryRepository.swift; sourceTree = "<group>"; };
+		AC01796D20751E6000EFB26C /* OrderSummaryRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = OrderSummaryRepository.swift; path = ../../Domain/Business/OrderSummary/OrderSummaryRepository.swift; sourceTree = "<group>"; };
 		AC4EE13E207E193900F634AE /* SavedLocationNetwork.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SavedLocationNetwork.swift; sourceTree = "<group>"; };
 		AC4EE140207E193900F634AE /* LocationRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationRepository.swift; sourceTree = "<group>"; };
 		AC4EE143207E197000F634AE /* DelivaryLocationVcProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DelivaryLocationVcProtocol.swift; sourceTree = "<group>"; };
@@ -146,7 +146,7 @@
 		AC818D242076615800D60D3B /* OrderHistoryMainPresenterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderHistoryMainPresenterProtocol.swift; sourceTree = "<group>"; };
 		AC818D262076620500D60D3B /* OrderHistoryMainPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderHistoryMainPresenter.swift; sourceTree = "<group>"; };
 		AC818D2A2076643000D60D3B /* OrderHistoryRepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderHistoryRepositoryProtocol.swift; sourceTree = "<group>"; };
-		AC818D2C2076644200D60D3B /* OrderHistoryRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderHistoryRepository.swift; sourceTree = "<group>"; };
+		AC818D2C2076644200D60D3B /* OrderHistoryRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = OrderHistoryRepository.swift; path = ../../Domain/Business/GetOrderHistory/OrderHistoryRepository.swift; sourceTree = "<group>"; };
 		AC818D2E2076656E00D60D3B /* HistoryNetworkProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryNetworkProtocol.swift; sourceTree = "<group>"; };
 		AC818D322076665800D60D3B /* GetOrderHistoryUCProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetOrderHistoryUCProtocol.swift; sourceTree = "<group>"; };
 		AC818D3620766D4D00D60D3B /* GetOrderHistoryUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetOrderHistoryUseCase.swift; sourceTree = "<group>"; };
@@ -357,7 +357,8 @@
 				AC4F015C207DFF2800C13C3B /* CreateNewLocationUseCaseProtocol.swift */,
 				AC4F015D207DFF2800C13C3B /* GetSavedLocationUseCaseProtocol.swift */,
 			);
-			path = DelivaryLocation;
+			name = DelivaryLocation;
+			path = ../UseCase/DelivaryLocation;
 			sourceTree = "<group>";
 		};
 		AC5F9ECF20750FA9003B04BC /* View */ = {
@@ -421,27 +422,28 @@
 		AC818D0E20752DEB00D60D3B /* Domain */ = {
 			isa = PBXGroup;
 			children = (
-				EC32E2CF207616D6003937EE /* Model */,
-				EC32E2D0207616EE003937EE /* RepositoryProtocol */,
-				EC32E2CE207616CB003937EE /* UseCase */,
-				AC818D1020752E1A00D60D3B /* Business */,
+				EC32E2CF207616D6003937EE /* Entities */,
+				AC818D1020752E1A00D60D3B /* Repository */,
 				AC818D1120752E2300D60D3B /* UseCases */,
 			);
 			path = Domain;
 			sourceTree = "<group>";
 		};
-		AC818D1020752E1A00D60D3B /* Business */ = {
+		AC818D1020752E1A00D60D3B /* Repository */ = {
 			isa = PBXGroup;
 			children = (
+				AC4F0156207D2A7300C13C3B /* DelivaryLocation */,
 				AC818D1420752E7800D60D3B /* OrderSummary */,
 				AC818D28207663E200D60D3B /* GetOrderHistory */,
 			);
+			name = Repository;
 			path = Business;
 			sourceTree = "<group>";
 		};
 		AC818D1120752E2300D60D3B /* UseCases */ = {
 			isa = PBXGroup;
 			children = (
+				AC4F0159207DFF2800C13C3B /* DelivaryLocation */,
 				AC818D292076640B00D60D3B /* GetOrderHistory */,
 				AC818D1520752E8300D60D3B /* OrderSummary */,
 			);
@@ -474,7 +476,6 @@
 			isa = PBXGroup;
 			children = (
 				AC01796B20751E1D00EFB26C /* OrderSummaryRepositoryProtocol.swift */,
-				AC01796D20751E6000EFB26C /* OrderSummaryRepository.swift */,
 			);
 			path = OrderSummary;
 			sourceTree = "<group>";
@@ -542,7 +543,6 @@
 			isa = PBXGroup;
 			children = (
 				AC818D2A2076643000D60D3B /* OrderHistoryRepositoryProtocol.swift */,
-				AC818D2C2076644200D60D3B /* OrderHistoryRepository.swift */,
 			);
 			path = GetOrderHistory;
 			sourceTree = "<group>";
@@ -559,6 +559,7 @@
 		AC818D302076658D00D60D3B /* HistoryDataLayer */ = {
 			isa = PBXGroup;
 			children = (
+				AC818D2C2076644200D60D3B /* OrderHistoryRepository.swift */,
 				AC818D2E2076656E00D60D3B /* HistoryNetworkProtocol.swift */,
 				ECB5F2D0206BFDC400C239B7 /* HistoryNetwork.swift */,
 			);
@@ -568,6 +569,7 @@
 		AC818D31207665A000D60D3B /* SummaryDataLayer */ = {
 			isa = PBXGroup;
 			children = (
+				AC01796D20751E6000EFB26C /* OrderSummaryRepository.swift */,
 				ECB5F2CF206BFDC300C239B7 /* SummaryNetwork.swift */,
 			);
 			path = SummaryDataLayer;
@@ -591,28 +593,13 @@
 			path = LoginScreen;
 			sourceTree = "<group>";
 		};
-		EC32E2CE207616CB003937EE /* UseCase */ = {
-			isa = PBXGroup;
-			children = (
-				AC4F0159207DFF2800C13C3B /* DelivaryLocation */,
-			);
-			path = UseCase;
-			sourceTree = "<group>";
-		};
-		EC32E2CF207616D6003937EE /* Model */ = {
+		EC32E2CF207616D6003937EE /* Entities */ = {
 			isa = PBXGroup;
 			children = (
 				EC32E2C92076169B003937EE /* SavedLocation.swift */,
 			);
+			name = Entities;
 			path = Model;
-			sourceTree = "<group>";
-		};
-		EC32E2D0207616EE003937EE /* RepositoryProtocol */ = {
-			isa = PBXGroup;
-			children = (
-				AC4F0156207D2A7300C13C3B /* DelivaryLocation */,
-			);
-			path = RepositoryProtocol;
 			sourceTree = "<group>";
 		};
 		EC32E2D920761B62003937EE /* DelivaryLocation */ = {
