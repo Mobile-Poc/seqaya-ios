@@ -22,6 +22,7 @@
 		AC01796920751D2D00EFB26C /* GetPlacedOrderUseCaseProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC01796820751D2D00EFB26C /* GetPlacedOrderUseCaseProtocol.swift */; };
 		AC01796C20751E1D00EFB26C /* OrderSummaryRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC01796B20751E1D00EFB26C /* OrderSummaryRepositoryProtocol.swift */; };
 		AC01796E20751E6000EFB26C /* OrderSummaryRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC01796D20751E6000EFB26C /* OrderSummaryRepository.swift */; };
+		AC4F0158207D2A7300C13C3B /* LocationRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4F0157207D2A7300C13C3B /* LocationRepositoryProtocol.swift */; };
 		AC5F9ECE2074EED9003B04BC /* OrderSummaryPresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5F9ECD2074EED9003B04BC /* OrderSummaryPresenterProtocol.swift */; };
 		AC5F9ED220750FEE003B04BC /* OrderSummaryViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5F9ED120750FEE003B04BC /* OrderSummaryViewProtocol.swift */; };
 		AC79BB0A206EF8FD001D7B7F /* success.json in Resources */ = {isa = PBXBuildFile; fileRef = AC79BB09206EF8FD001D7B7F /* success.json */; };
@@ -119,6 +120,7 @@
 		AC01796820751D2D00EFB26C /* GetPlacedOrderUseCaseProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetPlacedOrderUseCaseProtocol.swift; sourceTree = "<group>"; };
 		AC01796B20751E1D00EFB26C /* OrderSummaryRepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderSummaryRepositoryProtocol.swift; sourceTree = "<group>"; };
 		AC01796D20751E6000EFB26C /* OrderSummaryRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderSummaryRepository.swift; sourceTree = "<group>"; };
+		AC4F0157207D2A7300C13C3B /* LocationRepositoryProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationRepositoryProtocol.swift; sourceTree = "<group>"; };
 		AC5F9ECD2074EED9003B04BC /* OrderSummaryPresenterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderSummaryPresenterProtocol.swift; sourceTree = "<group>"; };
 		AC5F9ED120750FEE003B04BC /* OrderSummaryViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderSummaryViewProtocol.swift; sourceTree = "<group>"; };
 		AC79BB09206EF8FD001D7B7F /* success.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = success.json; sourceTree = "<group>"; };
@@ -325,6 +327,14 @@
 				AC79BB18206F3657001D7B7F /* OrderItemsSingelton.swift */,
 			);
 			path = Shared;
+			sourceTree = "<group>";
+		};
+		AC4F0156207D2A7300C13C3B /* DelivaryLocation */ = {
+			isa = PBXGroup;
+			children = (
+				AC4F0157207D2A7300C13C3B /* LocationRepositoryProtocol.swift */,
+			);
+			path = DelivaryLocation;
 			sourceTree = "<group>";
 		};
 		AC5F9ECF20750FA9003B04BC /* View */ = {
@@ -610,6 +620,7 @@
 		EC32E2D0207616EE003937EE /* RepositoryProtocol */ = {
 			isa = PBXGroup;
 			children = (
+				AC4F0156207D2A7300C13C3B /* DelivaryLocation */,
 			);
 			path = RepositoryProtocol;
 			sourceTree = "<group>";
@@ -904,6 +915,7 @@
 				AC818D332076665800D60D3B /* GetOrderHistoryUCProtocol.swift in Sources */,
 				6FED8B402068FCA000BE3D29 /* CheakOutProduct.swift in Sources */,
 				ECB5F2DD206BFE5F00C239B7 /* ProductSummaryCellVC.swift in Sources */,
+				AC4F0158207D2A7300C13C3B /* LocationRepositoryProtocol.swift in Sources */,
 				ECB5F2CC206BFD3900C239B7 /* OrderHistoryDetailVC.swift in Sources */,
 				EC32E2C620761687003937EE /* CreateNewLocationUseCase.swift in Sources */,
 				EC32E2D6207617A7003937EE /* AlamaofireClient.swift in Sources */,
