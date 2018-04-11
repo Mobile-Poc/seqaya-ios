@@ -22,6 +22,9 @@
 		AC01796920751D2D00EFB26C /* GetPlacedOrderUseCaseProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC01796820751D2D00EFB26C /* GetPlacedOrderUseCaseProtocol.swift */; };
 		AC01796C20751E1D00EFB26C /* OrderSummaryRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC01796B20751E1D00EFB26C /* OrderSummaryRepositoryProtocol.swift */; };
 		AC01796E20751E6000EFB26C /* OrderSummaryRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC01796D20751E6000EFB26C /* OrderSummaryRepository.swift */; };
+		AC4EE141207E193900F634AE /* SavedLocationNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4EE13E207E193900F634AE /* SavedLocationNetwork.swift */; };
+		AC4EE142207E193900F634AE /* LocationRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4EE140207E193900F634AE /* LocationRepository.swift */; };
+		AC4EE144207E197000F634AE /* DelivaryLocationVcProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4EE143207E197000F634AE /* DelivaryLocationVcProtocol.swift */; };
 		AC4F0158207D2A7300C13C3B /* LocationRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4F0157207D2A7300C13C3B /* LocationRepositoryProtocol.swift */; };
 		AC4F015E207DFF2800C13C3B /* CreateNewLocationUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4F015A207DFF2800C13C3B /* CreateNewLocationUseCase.swift */; };
 		AC4F015F207DFF2800C13C3B /* GetSavedLocationUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4F015B207DFF2800C13C3B /* GetSavedLocationUseCase.swift */; };
@@ -58,18 +61,11 @@
 		EC32AA88206BD329001F427B /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A9AFADD20691EB000191713 /* RegisterViewController.swift */; };
 		EC32AA89206BDB02001F427B /* Register.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A9AFADF2069261E00191713 /* Register.storyboard */; };
 		EC32AA8A206BDEEE001F427B /* CatalogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBFABF9C206A5536002F7701 /* CatalogViewController.swift */; };
-		EC32E2C620761687003937EE /* CreateNewLocationUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC32E2C220761686003937EE /* CreateNewLocationUseCase.swift */; };
-		EC32E2C720761687003937EE /* GetSavedLocationUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC32E2C320761686003937EE /* GetSavedLocationUseCase.swift */; };
-		EC32E2C820761687003937EE /* GetSavedLocationUseCaseProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC32E2C420761686003937EE /* GetSavedLocationUseCaseProtocol.swift */; };
 		EC32E2CA2076169C003937EE /* SavedLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC32E2C92076169B003937EE /* SavedLocation.swift */; };
-		EC32E2CC207616B0003937EE /* LocationRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC32E2CB207616B0003937EE /* LocationRepositoryProtocol.swift */; };
-		EC32E2D220761782003937EE /* LocationRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC32E2D120761782003937EE /* LocationRepository.swift */; };
 		EC32E2D6207617A7003937EE /* AlamaofireClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC32E2D3207617A6003937EE /* AlamaofireClient.swift */; };
-		EC32E2D7207617A7003937EE /* SavedLocationNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC32E2D4207617A6003937EE /* SavedLocationNetwork.swift */; };
 		EC32E2D8207617A7003937EE /* ApiConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC32E2D5207617A7003937EE /* ApiConstants.swift */; };
 		EC32E2DD20761BC6003937EE /* DelivaryLocationPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC32E2DB20761BC5003937EE /* DelivaryLocationPresenter.swift */; };
 		EC32E2DE20761BC6003937EE /* DelivaryLocationPresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC32E2DC20761BC5003937EE /* DelivaryLocationPresenterProtocol.swift */; };
-		EC32E2E020761C51003937EE /* DelivaryLocationVcProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC32E2DF20761C50003937EE /* DelivaryLocationVcProtocol.swift */; };
 		EC3B4753206A5B4200F5A8BF /* SavedLocationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3B4752206A5B4200F5A8BF /* SavedLocationModel.swift */; };
 		ECB5F2AB206BE01300C239B7 /* OrderItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB5F2AA206BE01300C239B7 /* OrderItem.swift */; };
 		ECB5F2AD206BE06E00C239B7 /* RKNotificationHub.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB5F2AC206BE06E00C239B7 /* RKNotificationHub.swift */; };
@@ -124,6 +120,9 @@
 		AC01796820751D2D00EFB26C /* GetPlacedOrderUseCaseProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetPlacedOrderUseCaseProtocol.swift; sourceTree = "<group>"; };
 		AC01796B20751E1D00EFB26C /* OrderSummaryRepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderSummaryRepositoryProtocol.swift; sourceTree = "<group>"; };
 		AC01796D20751E6000EFB26C /* OrderSummaryRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderSummaryRepository.swift; sourceTree = "<group>"; };
+		AC4EE13E207E193900F634AE /* SavedLocationNetwork.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SavedLocationNetwork.swift; sourceTree = "<group>"; };
+		AC4EE140207E193900F634AE /* LocationRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationRepository.swift; sourceTree = "<group>"; };
+		AC4EE143207E197000F634AE /* DelivaryLocationVcProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DelivaryLocationVcProtocol.swift; sourceTree = "<group>"; };
 		AC4F0157207D2A7300C13C3B /* LocationRepositoryProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationRepositoryProtocol.swift; sourceTree = "<group>"; };
 		AC4F015A207DFF2800C13C3B /* CreateNewLocationUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateNewLocationUseCase.swift; sourceTree = "<group>"; };
 		AC4F015B207DFF2800C13C3B /* GetSavedLocationUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetSavedLocationUseCase.swift; sourceTree = "<group>"; };
@@ -159,18 +158,11 @@
 		EC06C5652069286700D6BFEA /* LocationSearchTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationSearchTable.swift; sourceTree = "<group>"; };
 		EC06C5672069523F00D6BFEA /* HandleMapSearchProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandleMapSearchProtocol.swift; sourceTree = "<group>"; };
 		EC32AA86206BCEFC001F427B /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
-		EC32E2C220761686003937EE /* CreateNewLocationUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateNewLocationUseCase.swift; sourceTree = "<group>"; };
-		EC32E2C320761686003937EE /* GetSavedLocationUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetSavedLocationUseCase.swift; sourceTree = "<group>"; };
-		EC32E2C420761686003937EE /* GetSavedLocationUseCaseProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetSavedLocationUseCaseProtocol.swift; sourceTree = "<group>"; };
 		EC32E2C92076169B003937EE /* SavedLocation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SavedLocation.swift; sourceTree = "<group>"; };
-		EC32E2CB207616B0003937EE /* LocationRepositoryProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationRepositoryProtocol.swift; sourceTree = "<group>"; };
-		EC32E2D120761782003937EE /* LocationRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationRepository.swift; sourceTree = "<group>"; };
 		EC32E2D3207617A6003937EE /* AlamaofireClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlamaofireClient.swift; sourceTree = "<group>"; };
-		EC32E2D4207617A6003937EE /* SavedLocationNetwork.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SavedLocationNetwork.swift; sourceTree = "<group>"; };
 		EC32E2D5207617A7003937EE /* ApiConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiConstants.swift; sourceTree = "<group>"; };
 		EC32E2DB20761BC5003937EE /* DelivaryLocationPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DelivaryLocationPresenter.swift; sourceTree = "<group>"; };
 		EC32E2DC20761BC5003937EE /* DelivaryLocationPresenterProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DelivaryLocationPresenterProtocol.swift; sourceTree = "<group>"; };
-		EC32E2DF20761C50003937EE /* DelivaryLocationVcProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DelivaryLocationVcProtocol.swift; path = "/Users/admin101/Desktop/NTGSeqaya/seqaya-ios/Presentation/DelivaryLocation/DelivaryLocationVcProtocol.swift"; sourceTree = "<absolute>"; };
 		EC3B4752206A5B4200F5A8BF /* SavedLocationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedLocationModel.swift; sourceTree = "<group>"; };
 		ECB5F2AA206BE01300C239B7 /* OrderItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderItem.swift; sourceTree = "<group>"; };
 		ECB5F2AC206BE06E00C239B7 /* RKNotificationHub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RKNotificationHub.swift; sourceTree = "<group>"; };
@@ -238,8 +230,6 @@
 		6FED8B182068F75D00BE3D29 = {
 			isa = PBXGroup;
 			children = (
-				EC32E2BD20761506003937EE /* Domain */,
-				EC32E2BC207614FF003937EE /* Data */,
 				6FED8B382068FAF300BE3D29 /* UI */,
 				AC818D0D20752DDB00D60D3B /* Presentation */,
 				AC818D0E20752DEB00D60D3B /* Domain */,
@@ -250,7 +240,6 @@
 				6FED8B222068F75D00BE3D29 /* Products */,
 				CC00BADE23A0DA56F259FDBF /* Pods */,
 				3E59774C1EB009532A5B3855 /* Frameworks */,
-				AC818D53207D13B200D60D3B /* Recovered References */,
 			);
 			sourceTree = "<group>";
 		};
@@ -310,7 +299,6 @@
 				6FED8B392068FB4000BE3D29 /* CheckOutScreen */,
 				AC79BB12206F237B001D7B7F /* Settings */,
 				ECB5F2B5206BEDDD00C239B7 /* DateTimeScreen */,
-				EC06C5602069112A00D6BFEA /* DeliveryLocationMap */,
 				6FED8B3E2068FBA700BE3D29 /* Shared */,
 			);
 			path = UI;
@@ -335,6 +323,22 @@
 				AC79BB18206F3657001D7B7F /* OrderItemsSingelton.swift */,
 			);
 			path = Shared;
+			sourceTree = "<group>";
+		};
+		AC4EE13D207E193900F634AE /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				AC4EE13E207E193900F634AE /* SavedLocationNetwork.swift */,
+			);
+			path = DataSource;
+			sourceTree = "<group>";
+		};
+		AC4EE13F207E193900F634AE /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				AC4EE140207E193900F634AE /* LocationRepository.swift */,
+			);
+			path = Repository;
 			sourceTree = "<group>";
 		};
 		AC4F0156207D2A7300C13C3B /* DelivaryLocation */ = {
@@ -417,6 +421,9 @@
 		AC818D0E20752DEB00D60D3B /* Domain */ = {
 			isa = PBXGroup;
 			children = (
+				EC32E2CF207616D6003937EE /* Model */,
+				EC32E2D0207616EE003937EE /* RepositoryProtocol */,
+				EC32E2CE207616CB003937EE /* UseCase */,
 				AC818D1020752E1A00D60D3B /* Business */,
 				AC818D1120752E2300D60D3B /* UseCases */,
 			);
@@ -444,6 +451,8 @@
 		AC818D1220752E3100D60D3B /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				EC32E2D3207617A6003937EE /* AlamaofireClient.swift */,
+				EC32E2D5207617A7003937EE /* ApiConstants.swift */,
 				EC32E2D920761B62003937EE /* DelivaryLocation */,
 				AC818D1620761E0500D60D3B /* ServiceLocator.swift */,
 				AC818D31207665A000D60D3B /* SummaryDataLayer */,
@@ -564,19 +573,6 @@
 			path = SummaryDataLayer;
 			sourceTree = "<group>";
 		};
-		AC818D53207D13B200D60D3B /* Recovered References */ = {
-			isa = PBXGroup;
-			children = (
-				EC32E2D120761782003937EE /* LocationRepository.swift */,
-				EC32E2D4207617A6003937EE /* SavedLocationNetwork.swift */,
-				EC32E2CB207616B0003937EE /* LocationRepositoryProtocol.swift */,
-				EC32E2C220761686003937EE /* CreateNewLocationUseCase.swift */,
-				EC32E2C320761686003937EE /* GetSavedLocationUseCase.swift */,
-				EC32E2C420761686003937EE /* GetSavedLocationUseCaseProtocol.swift */,
-			);
-			name = "Recovered References";
-			sourceTree = "<group>";
-		};
 		CC00BADE23A0DA56F259FDBF /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -593,32 +589,6 @@
 				AC80C4752072527000C8BAD3 /* Login.storyboard */,
 			);
 			path = LoginScreen;
-			sourceTree = "<group>";
-		};
-		EC06C5602069112A00D6BFEA /* DeliveryLocationMap */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = DeliveryLocationMap;
-			sourceTree = "<group>";
-		};
-		EC32E2BC207614FF003937EE /* Data */ = {
-			isa = PBXGroup;
-			children = (
-				EC32E2D3207617A6003937EE /* AlamaofireClient.swift */,
-				EC32E2D5207617A7003937EE /* ApiConstants.swift */,
-			);
-			path = Data;
-			sourceTree = "<group>";
-		};
-		EC32E2BD20761506003937EE /* Domain */ = {
-			isa = PBXGroup;
-			children = (
-				EC32E2CF207616D6003937EE /* Model */,
-				EC32E2D0207616EE003937EE /* RepositoryProtocol */,
-				EC32E2CE207616CB003937EE /* UseCase */,
-			);
-			path = Domain;
 			sourceTree = "<group>";
 		};
 		EC32E2CE207616CB003937EE /* UseCase */ = {
@@ -648,6 +618,8 @@
 		EC32E2D920761B62003937EE /* DelivaryLocation */ = {
 			isa = PBXGroup;
 			children = (
+				AC4EE13D207E193900F634AE /* DataSource */,
+				AC4EE13F207E193900F634AE /* Repository */,
 			);
 			path = DelivaryLocation;
 			sourceTree = "<group>";
@@ -655,11 +627,11 @@
 		EC32E2DA20761B7A003937EE /* DelivaryLocation */ = {
 			isa = PBXGroup;
 			children = (
+				AC4EE143207E197000F634AE /* DelivaryLocationVcProtocol.swift */,
 				EC06C563206924B000D6BFEA /* DeliveryLocationSB.storyboard */,
 				EC32E2DB20761BC5003937EE /* DelivaryLocationPresenter.swift */,
 				EC32E2DC20761BC5003937EE /* DelivaryLocationPresenterProtocol.swift */,
 				EC06C5612069123600D6BFEA /* DeliveryLocationVC.swift */,
-				EC32E2DF20761C50003937EE /* DelivaryLocationVcProtocol.swift */,
 				EC06C5652069286700D6BFEA /* LocationSearchTable.swift */,
 				EC06C5672069523F00D6BFEA /* HandleMapSearchProtocol.swift */,
 			);
@@ -890,12 +862,12 @@
 				FB7BD997206D1F4600BE55DD /* OrderNetwork.swift in Sources */,
 				FBBD513E206EC702008B55A1 /* UIViewControllerExtension.swift in Sources */,
 				ECB5F2AF206BE53E00C239B7 /* OrderHistory.swift in Sources */,
-				EC32E2D220761782003937EE /* LocationRepository.swift in Sources */,
-				EC32E2D7207617A7003937EE /* SavedLocationNetwork.swift in Sources */,
 				AC80C48020725DCB00C8BAD3 /* ProductFavouriteDelegate.swift in Sources */,
+				AC4EE141207E193900F634AE /* SavedLocationNetwork.swift in Sources */,
 				EC32AA88206BD329001F427B /* RegisterViewController.swift in Sources */,
 				EC32AA87206BCEFC001F427B /* UserModel.swift in Sources */,
 				EC06C5662069286700D6BFEA /* LocationSearchTable.swift in Sources */,
+				AC4EE142207E193900F634AE /* LocationRepository.swift in Sources */,
 				AC01796E20751E6000EFB26C /* OrderSummaryRepository.swift in Sources */,
 				AC818D2B2076643000D60D3B /* OrderHistoryRepositoryProtocol.swift in Sources */,
 				AC79BB0F206F0317001D7B7F /* ValidationHelpers.swift in Sources */,
@@ -915,7 +887,6 @@
 				AC4F0160207DFF2800C13C3B /* CreateNewLocationUseCaseProtocol.swift in Sources */,
 				EC32E2DD20761BC6003937EE /* DelivaryLocationPresenter.swift in Sources */,
 				AC4F0161207DFF2800C13C3B /* GetSavedLocationUseCaseProtocol.swift in Sources */,
-				EC32E2CC207616B0003937EE /* LocationRepositoryProtocol.swift in Sources */,
 				FBFABFA6206A55F0002F7701 /* UIHelper.swift in Sources */,
 				ECDCB64D206CC0B7005B173D /* Payment.swift in Sources */,
 				AC5F9ED220750FEE003B04BC /* OrderSummaryViewProtocol.swift in Sources */,
@@ -923,7 +894,6 @@
 				6FED8B3B2068FB7900BE3D29 /* CheckOutViewController.swift in Sources */,
 				EC32E2CA2076169C003937EE /* SavedLocation.swift in Sources */,
 				AC0179652075164000EFB26C /* OrderSummaryPresenter.swift in Sources */,
-				EC32E2E020761C51003937EE /* DelivaryLocationVcProtocol.swift in Sources */,
 				FBFABFA9206A6D22002F7701 /* ProductNetwork.swift in Sources */,
 				AC818D272076620500D60D3B /* OrderHistoryMainPresenter.swift in Sources */,
 				6FED8B272068F75D00BE3D29 /* ViewController.swift in Sources */,
@@ -931,6 +901,7 @@
 				AC818D2D2076644200D60D3B /* OrderHistoryRepository.swift in Sources */,
 				EC32AA8A206BDEEE001F427B /* CatalogViewController.swift in Sources */,
 				AC818D1720761E0500D60D3B /* ServiceLocator.swift in Sources */,
+				AC4EE144207E197000F634AE /* DelivaryLocationVcProtocol.swift in Sources */,
 				ECB5F2BC206BEE1E00C239B7 /* PaymentTableViewCell.swift in Sources */,
 				AC4F015F207DFF2800C13C3B /* GetSavedLocationUseCase.swift in Sources */,
 				6FED8B252068F75D00BE3D29 /* AppDelegate.swift in Sources */,
@@ -941,18 +912,15 @@
 				ECB5F2DD206BFE5F00C239B7 /* ProductSummaryCellVC.swift in Sources */,
 				AC4F0158207D2A7300C13C3B /* LocationRepositoryProtocol.swift in Sources */,
 				ECB5F2CC206BFD3900C239B7 /* OrderHistoryDetailVC.swift in Sources */,
-				EC32E2C620761687003937EE /* CreateNewLocationUseCase.swift in Sources */,
 				EC32E2D6207617A7003937EE /* AlamaofireClient.swift in Sources */,
 				AC80C47920725D2500C8BAD3 /* FavProductViewController.swift in Sources */,
 				ECB5F2BD206BEE1E00C239B7 /* PaymentViewController.swift in Sources */,
-				EC32E2C720761687003937EE /* GetSavedLocationUseCase.swift in Sources */,
 				EC06C5682069523F00D6BFEA /* HandleMapSearchProtocol.swift in Sources */,
 				EC32E2DE20761BC6003937EE /* DelivaryLocationPresenterProtocol.swift in Sources */,
 				ECB5F2B1206BE67A00C239B7 /* CheckOutCell.swift in Sources */,
 				ECB5F2BB206BEE1E00C239B7 /* DateTimeViewController.swift in Sources */,
 				6FED8B442068FCF300BE3D29 /* CatlogCell.swift in Sources */,
 				EC32E2D8207617A7003937EE /* ApiConstants.swift in Sources */,
-				EC32E2C820761687003937EE /* GetSavedLocationUseCaseProtocol.swift in Sources */,
 				AC80C47E20725DCB00C8BAD3 /* CatalogFavButtonDelegate.swift in Sources */,
 				ECB5F2CD206BFD3900C239B7 /* OrderHistoryMainVC.swift in Sources */,
 				FBFABFA4206A55C9002F7701 /* Product.swift in Sources */,

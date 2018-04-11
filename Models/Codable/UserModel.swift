@@ -27,7 +27,7 @@ struct UserModel : Codable {
     //var id : String
     var name : String
     var password : String
-    var phoneNumber : String
+    var phone : String
     var shoppingCart: Items?
     
     //id : String ,
@@ -36,7 +36,7 @@ struct UserModel : Codable {
         // self.id = id
         self.name = name
         self.password = password
-        self.phoneNumber = phonenumber
+        self.phone = phonenumber
         self.shoppingCart = nil
     }
 }
